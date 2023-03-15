@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 struct Funcionario
 {
@@ -8,7 +9,7 @@ struct Funcionario
     float salario;
 };
 
-void imprima_fun(struct Funcionario *fun)
+void imprimir_fun(struct Funcionario *fun)
 {
     printf("nome:%s\t", fun->nome);
     printf("CPF:%s\t", fun->CPF);
@@ -23,7 +24,7 @@ struct Empresa
     struct Funcionario empregados[100];
 };
 
-void imprima_emp(struct Empresa *emp)
+void imprimir_emp(struct Empresa *emp)
 {
     printf("nome:%s\t", emp->nome);
     printf("CNPJ:%s\n", emp->CNPJ);
@@ -31,7 +32,7 @@ void imprima_emp(struct Empresa *emp)
     int i;
     for (i = 0; i < emp->numero_fun; i = i + 1)
     {
-        imprima_fun(&(emp->empregados[i]));
+        imprimir_fun(&(emp->empregados[i]));
     }
 }
 
@@ -57,7 +58,7 @@ int main(void)
     supermercado.empregados[1] = josefa;
     supermercado.numero_fun = supermercado.numero_fun + 1;
 
-    imprima_emp(&supermercado);
+    imprimir_emp(&supermercado);
 
     return 0;
 }
