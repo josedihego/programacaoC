@@ -5,14 +5,13 @@ void trocar(int a, int b)
     int t = a;
     a = b;
     b = t;
-    printf("trocar: a = %d, b = %d\n", a, b);
 }
 
 int main(void)
 {
-    int a = 12;
-    int b = 15;
-    trocar(a, b);
-    printf("main: a = %d, b = %d\n", a, b);
+    int x = 12;
+    int y = 15;
+    trocar(x, y);
+    printf("main: x = %d, y = %d\n", x, y);
     return 0;
 }
