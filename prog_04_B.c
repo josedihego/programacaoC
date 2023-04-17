@@ -12,7 +12,7 @@ int main(){
     scanf("%f", &b);
     printf("%s", "informe o valor de c:");
     scanf("%f", &c);
-    delta = (b * b) - (4 * a * c);
+    delta = pow(b,2) - (4 * a * c);
     if(delta > 0){
         x1 = (-1 * b + sqrt(delta))/(2*a);
         x2 = (-1 * b - sqrt(delta))/(2*a);
