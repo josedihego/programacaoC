@@ -26,7 +26,16 @@ int main(){
     scanf("%d", &p2v);
     
    int res_soma =  somar(p1v,p2v);
-   printf("Soma é igual a %d", res_soma);
+   printf("Soma é igual a %d\n", res_soma);
+
+   int res_subtracao = subtrair(p1v,p2v);
+   printf("Subtração é igual a : %d\n", res_subtracao);
+
+   int res_multiplicacao = multiplicar(p1v,p2v);
+   printf("Multiplicação igual a: %d\n", res_multiplicacao);
+
+   int res_divisao = dividir(p1v,p2v);
+   printf("Divisão igual a: %d\n",res_divisao);
 
     return EXIT_SUCCESS;
 }
