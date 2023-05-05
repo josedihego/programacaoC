@@ -5,6 +5,7 @@
 // vf =  vi + a * t
 // delta = b² - 4 * a * c
 int main(){
+    float R = 8.314;
     float vf;
     float vi;
     float a;
