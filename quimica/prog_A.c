@@ -18,8 +18,8 @@ int main(){
     vf = vi + (a * t);
     printf("Velocidade final %f m/s\n", vf);
 
-   float a, b, c;
-   float delta;
-   delta = pow(b,c) - (4 * a * c);
+   //float a, b, c;
+   //float delta;
+   //delta = pow(b,c) - (4 * a * c);
     
 }
