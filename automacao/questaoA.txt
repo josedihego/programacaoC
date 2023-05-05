@@ -1,0 +1,14 @@
+Crie um programa que lê valores de vendas (float)
+para uma determinada vendedora até que a mesma
+bata a meta de vendas do dia de 15000 R$. Nesse
+momento seu programa para e informa a média das
+vendas da vendedora naquele dia.
+
+Exemplo de funcionamento:
+
+1234.50
+3876.45
+1345.67
+9784.79
+
+Média: 4060,35 
