@@ -11,4 +11,4 @@ Exemplo de funcionamento:
 1345.67
 9784.79
 
-Média: 4060,35 
+Média: 4060.35 
