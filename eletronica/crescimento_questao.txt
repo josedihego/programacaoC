@@ -4,4 +4,4 @@ de funcionamento.
 (1) Crie um programa que recebe CF, P e X e informa para qual
 a chance da máquina falhar depois de Y horas de funcionamento.
 (2) Crie um programa que calcula quando essa máquina ficará
-obseoleta.
+obsoleta (quando a chance de falhar atinge 100%).

@@ -1,0 +1,12 @@
+Crie um programa que imprime os primeiros N números 
+primos.
+
+Exemplo>
+
+Usuário informa N = 10:
+Seu programa imprime:
+2, 3, 5, 7, 11, 13, 17, 19, 23, 29
+
+Usuário informa N = 5:
+Seu programa imprime:
+2, 3, 5, 7, 11
