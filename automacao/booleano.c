@@ -10,9 +10,9 @@ int main()
     bool esta_dor;
     int batimentos;
     char *res = malloc(10 * sizeof(char));
-    printf("%s", "Paciente com febre? (SIM, NAO)");
+    printf("%s", "Paciente com febre? (SIM, NÃO)");
     scanf("%s", res);
-    if (strcmp(res, "SIM") == 0)
+    if (strcmp(res, "SIM") == 0 || strcmp(res,"sim")==0)
     {
         esta_febre = true;
     }
@@ -21,9 +21,9 @@ int main()
         esta_febre = false;
     }
 
-    printf("%s", "Paciente cançado? (SIM, NAO)");
+    printf("%s", "Paciente cansado? (SIM, NÃO)");
     scanf("%s", res);
-    if (strcmp(res, "SIM") == 0)
+    if (strcmp(res, "SIM") == 0 || strcmp(res,"sim")==0)
     {
         esta_cansaco = true;
     }
@@ -31,9 +31,9 @@ int main()
     {
         esta_cansaco = false;
     }
-    printf("%s", "Paciente esta com dor? (SIM, NAO)");
+    printf("%s", "Paciente esta com dor? (SIM, NÃO)");
     scanf("%s", res);
-    if (strcmp(res, "SIM") == 0)
+    if (strcmp(res, "SIM") == 0 || strcmp(res,"sim")==0)
     {
         esta_dor = true;
     }
