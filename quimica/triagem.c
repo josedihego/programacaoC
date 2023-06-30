@@ -10,7 +10,7 @@ int main()
     bool esta_falta_ar;
     int batimentos;
     char *resposta = malloc(4 * sizeof(char));
-    printf("%s", "Paciente esta com dor? (SIM)(N√O)");
+    printf("%s", "Paciente esta com dor? (SIM)(N√ÉO)");
     scanf("%s", resposta);
     if (strcmp(resposta, "SIM") == 0)
     {
@@ -20,7 +20,7 @@ int main()
     {
         esta_dor = false;
     }
-    printf("%s", "Paciente esta com febre? (SIM)(N√O)");
+    printf("%s", "Paciente esta com febre? (SIM)(N√ÉO)");
     scanf("%s", resposta);
     if (strcmp(resposta, "SIM") == 0)
     {
@@ -30,9 +30,9 @@ int main()
     {
         esta_febre = false;
     }
-    printf("%s", "Paciente esta com falta de ar? (SIM)(N√O)");
+    printf("%s", "Paciente esta com falta de ar? (SIM)(N√ÉO)");
     scanf("%s", resposta);
-    if (strcmp(resposta, "SIM") == 0)
+    if (strcmp(resposta, "SIM") == 0  || strcmp(resposta, "sim") == 0 || strcmp(resposta, "s") == 0)
     {
         esta_falta_ar = true;
     }
@@ -44,14 +44,16 @@ int main()
     scanf("%d", &batimentos);
 
     if((batimentos < 50 || batimentos > 150) && esta_dor && esta_falta_ar && esta_febre){
-        printf("%s", "Paciente com classificaÁ„o vermelha");
+        printf("%s", "Paciente com classifica√ß√£o vermelha");
     }
     else{
-        //Amarelo se estiver com falta de ar ou pelo menos 
-        // dois outros sintomas
-        
+       if(esta_dor && esta_falta_ar){
+                printf("%s", "Paciente com classifica√ß√£o amarela");
+       }
+       else{
+                printf("%s", "Paciente com classifica√ß√£o verde");
 
-        // Verde caso contr·rio
+       }
     }
 
 }
