@@ -2,19 +2,19 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
-#include <ctype.h> 
+#include <ctype.h>
 
-char * transformar_caixa_baixa(char * texto, int qnt){
-    char * res = malloc(qnt * sizeof(char));
-    for(int i = 0 ; i < qnt; i = i +1){
+char *transformar_caixa_baixa(char *texto, int qnt)
+{
+    char *res = malloc(qnt * sizeof(char));
+    for (int i = 0; i < qnt; i = i + 1)
+    {
         res[i] = tolower(texto[i]);
     }
     return res;
 }
-
 int main()
 {
-    printf("%s\n", texto);
     bool esta_febre;
     bool esta_dor;
     bool esta_falta_ar;
@@ -23,7 +23,7 @@ int main()
 
     printf("%s", "Paciente está com febre?");
     scanf("%s", resposta);
-    resposta = transformar_caixa_baixa(resposta,4);
+    resposta = transformar_caixa_baixa(resposta, 4);
     if (strcmp(resposta, "sim") == 0)
     {
         esta_febre = true;
