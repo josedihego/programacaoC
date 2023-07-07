@@ -34,7 +34,9 @@ int main(){
     printf("\t%s\n", "2. Atualizar produto:");
     printf("\t%s\n", "3. Consultar valor de produto:");
     printf("\t%s\n", "4. Consultar valor total do estoque:");
+    printf("\t%s\n", "5. Sair");
     int opcao;
+    while(opcao != 5){
     scanf("%d", &opcao);
     switch (opcao)
     {
@@ -53,5 +55,6 @@ int main(){
        default:
        //  nenhum valor válido foi digitado
        break;
+    }
     }
 }
