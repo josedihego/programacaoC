@@ -13,5 +13,5 @@ int main(){
             quantidade = quantidade + 1;
         }
     }
-    printf("média foi de: %d",somatorio/quantidade);
+    printf("média foi de: %d\n",somatorio/quantidade);
 }

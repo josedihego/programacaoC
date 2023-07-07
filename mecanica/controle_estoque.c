@@ -2,6 +2,30 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+void cadastrar_produto(int * quantidades, float * precos){
+    int posicao;
+    int quantidade;
+    float preco;
+    printf("%s", "Informe a posição do produto: ");
+    scanf("%d", &posicao);
+    printf("%s","Informe a quantidade do produto: ");
+    scanf("%d", &quantidade);
+    printf("%s", "Informe o valor unitário do produto: ");
+    scanf("%f", &preco);
+    quantidades[posicao] = quantidade;
+    precos[posicao] = preco;
+
+}
+void consultar_produto(int * quantidades, float * precos){
+    int posicao;
+    printf("%s", "Informe a posição do produto: ");
+    scanf("%d", &posicao);
+    printf("%s\n", "Resultado da consulta: ");
+    printf("Quantidade: %d", quantidades[posicao]);
+    printf("Preço: %f", precos[posicao]);
+}
+
 int main(){
     int * quantidades = malloc(150 * sizeof(int));
     float * precos = malloc(150 * sizeof(float));
@@ -15,13 +39,13 @@ int main(){
     switch (opcao)
     {
        case 1:
-       // cadastrar produto
+       cadastrar_produto(quantidades, precos);
        break;
        case 2:
        //atualizar produto
        break;
        case 3:
-       //consultar valor produto
+       consultar_produto(quantidades,precos);
        break;
        case 4:
        // consultar valor estoque
@@ -30,8 +54,4 @@ int main(){
        //  nenhum valor válido foi digitado
        break;
     }
-
-
-
-
 }
