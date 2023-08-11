@@ -23,7 +23,7 @@ void consultar_produto(int * quantidades, float * precos){
     scanf("%d", &posicao);
     printf("%s\n", "Resultado da consulta: ");
     printf("Quantidade: %d", quantidades[posicao]);
-    printf("Preço: %f", precos[posicao]);
+    printf("Preço: %.2f", precos[posicao]);
 }
 
 int main(){
@@ -44,13 +44,13 @@ int main(){
        cadastrar_produto(quantidades, precos);
        break;
        case 2:
-       //atualizar produto
+       atualizar_estoque();
        break;
        case 3:
        consultar_produto(quantidades,precos);
        break;
        case 4:
-       // consultar valor estoque
+       consultar_valor_total();
        break;
        default:
        //  nenhum valor válido foi digitado
