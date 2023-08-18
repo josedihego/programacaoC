@@ -2,12 +2,13 @@
 #include<stdlib.h>
 #include<stdbool.h>
 #include<string.h>
+#include<math.h>
 
 typedef struct Conta{
-    char * numero;
-    char * agencia;
-    float saldo;
-} Conta;
+  float saldo;
+  char * numero;
+  char * agencia;
+}Conta;
 
 typedef struct Banco{
     Conta ** contas;
@@ -15,20 +16,37 @@ typedef struct Banco{
 }Banco;
 
 
-void cadastrar_conta( Conta * nova_conta, Banco * banco){
-      banco->contas[banco->proxPL] = nova_conta;
-      banco->proxPL = banco->proxPL + 1;
+void cadastrar_conta(Conta * conta_nova, Banco * banco){
+    banco->contas[banco->proxPL] = conta_nova;
+    banco->proxPL = banco->proxPL + 1;
 }
 
 Conta * buscar_conta(Banco * banco, char * n_bus, char * a_bus){
     int i = 0;
-    Conta * atual = NULL;
+    Conta * c_teste;
     while(i < banco->proxPL){
-        atual = banco->contas[i];
-        if(strcmp(atual->numero,n_bus)
-        && strcmp(atual->agencia, a_bus)){
-            return atual;
+        c_teste=  banco->contas[i];
+        if(strcmp(c_teste->numero,n_bus)
+          && strcmp(c_teste->agencia, a_bus)){
+            return c_teste;
         }
+        i = i + 1;
     }
     return NULL;
 }
+
+void remover_conta(Banco * banco, Conta * con_rem){
+    int i = 0;
+    Conta * c_teste;
+    while(i < banco->proxPL){
+        c_teste = banco->contas[i];
+        if(strcmp(c_teste->numero, con_rem->numero)
+        && strcmp(c_teste->agencia, con_rem->agencia)){
+            banco->contas[i] = banco->contas[banco->proxPL-1];
+            banco->proxPL = banco->proxPL -1;
+        }
+    }
+}
+
+
+

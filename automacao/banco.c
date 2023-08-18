@@ -2,35 +2,53 @@
 #include<stdlib.h>
 #include<stdbool.h>
 #include<string.h>
-
-int MAX_CONTAS = 10000;
+#include<math.h>
 
 typedef struct Conta{
-    float saldo;
-    char * numero;
-    char * agencia;
-} Conta;
+  float saldo;
+  char * numero;
+  char * agencia;
+}Conta;
 
 typedef struct Banco{
-    Conta ** lista_contas;
+    Conta ** contas;
     int proxPL;
 }Banco;
 
-void cadastrar_conta(Banco * banco, Conta * nova_conta ){
-    banco->lista_contas[banco->proxPL] = nova_conta;
+
+void cadastrar_conta(Conta * conta_nova, Banco * banco){
+    banco->contas[banco->proxPL] = conta_nova;
     banco->proxPL = banco->proxPL + 1;
 }
 
-Conta * buscar_conta(Banco * banco, char * numero_buscado, char * agencia_buscada){
+Conta * buscar_conta(Banco * banco, char * n_con, char * a_con){
     int i = 0;
-    Conta * c = NULL;
-    while( i < banco->proxPL){
-       c  = banco->lista_contas[i];
-       bool num_igual = strcmp(c->numero,numero_buscado);
-       bool ag_igual = strcmp(c->agencia,agencia_buscada);
-       if(num_igual && ag_igual){
-           return c;
-       }
+    Conta * c;
+    while(i < banco->proxPL){
+        c = banco->contas[i];
+        if(strcmp(c->numero,n_con) 
+           && strcmp(c->agencia,a_con)){
+             return c;
+           }
+           i = i +1;
     }
-    return c;
+    return NULL;
 }
+
+
+
+void remover_conta(Banco * banco, Conta * con_rem){
+    int i = 0;
+    Conta * c_teste;
+    while(i < banco->proxPL){
+        c_teste = banco->contas[i];
+        if(strcmp(c_teste->numero, con_rem->numero)
+        && strcmp(c_teste->agencia, con_rem->agencia)){
+            banco->contas[i] = banco->contas[banco->proxPL-1];
+            banco->proxPL = banco->proxPL -1;
+        }
+    }
+}
+
+
+
