@@ -21,32 +21,32 @@ void cadastrar_conta(Conta * conta_nova, Banco * banco){
     banco->proxPL = banco->proxPL + 1;
 }
 
-Conta * buscar_conta(Banco * banco, char * n_bus, char * a_bus){
+Conta * buscar_conta(Banco * bnc, char * ag, char * num){
     int i = 0;
-    Conta * c_teste;
-    while(i < banco->proxPL){
-        c_teste=  banco->contas[i];
-        if(strcmp(c_teste->numero,n_bus)
-          && strcmp(c_teste->agencia, a_bus)){
-            return c_teste;
-        }
-        i = i + 1;
+    Conta * c;
+    while(i < bnc->proxPL){
+        c = bnc->contas[i];
+        if(strcmp(c->numero,num) 
+           && strcmp(c->agencia,ag)){
+            return c;
+           }
+           i = i +1;
     }
     return NULL;
 }
 
-void remover_conta(Banco * banco, Conta * con_rem){
+void remover_conta(Banco * bnc, char * num, char * ag){
     int i = 0;
-    Conta * c_teste;
-    while(i < banco->proxPL){
-        c_teste = banco->contas[i];
-        if(strcmp(c_teste->numero, con_rem->numero)
-        && strcmp(c_teste->agencia, con_rem->agencia)){
-            banco->contas[i] = banco->contas[banco->proxPL-1];
-            banco->proxPL = banco->proxPL -1;
-        }
+    Conta * c;
+    while(i < bnc->proxPL){
+        c = bnc->contas[i];
+        if(strcmp(c->numero, num)
+         && strcmp(c->agencia,ag)){
+            bnc->contas[i] = bnc->contas[bnc->proxPL-1];
+            bnc->proxPL = bnc->proxPL -1;
+         }
+         i = i + 1;
     }
 }
-
 
 
