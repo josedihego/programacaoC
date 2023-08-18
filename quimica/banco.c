@@ -21,7 +21,30 @@ void cadastrar_conta(Conta * conta_nova, Banco * banco){
     banco->proxPL = banco->proxPL + 1;
 }
 
-Conta * buscar_conta(Banco * banco, char * n_bus, char * a_bus){
+Conta * buscar_conta(Banco * ban, char * n_bus, char * a_bus){
+    int i = 0;
+    Conta * c;
+    while( i < ban->proxPL){
+        c = ban->contas[i];
+        if(strcmp(c->numero,n_bus)
+          && strcmp(c->agencia,a_bus)){
+            return c;
+          }
+          i = i +1;
+    }
+    return NULL;
+}
+
+int main(){
+    
+}
+
+
+
+
+
+
+Conta * buscar_conta2(Banco * banco, char * n_bus, char * a_bus){
     int i = 0;
     Conta * c_teste;
     while(i < banco->proxPL){
