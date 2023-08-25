@@ -51,42 +51,11 @@ void remover_conta(Banco * banco, Conta * con_rem){
 
 void atualizar_conta(Banco * banco, Conta * conta){
     remover_conta(banco,conta);
-    cadastrar_conta(banco, conta);
+    cadastrar_conta(conta, banco);
 }
 int main(){
-    
-}
-
-
-
-
-
-
-Conta * buscar_conta2(Banco * banco, char * n_bus, char * a_bus){
-    int i = 0;
-    Conta * c_teste;
-    while(i < banco->proxPL){
-        c_teste=  banco->contas[i];
-        if(strcmp(c_teste->numero,n_bus)
-          && strcmp(c_teste->agencia, a_bus)){
-            return c_teste;
-        }
-        i = i + 1;
-    }
-    return NULL;
-}
-
-void remover_conta(Banco * banco, Conta * con_rem){
-    int i = 0;
-    Conta * c_teste;
-    while(i < banco->proxPL){
-        c_teste = banco->contas[i];
-        if(strcmp(c_teste->numero, con_rem->numero)
-        && strcmp(c_teste->agencia, con_rem->agencia)){
-            banco->contas[i] = banco->contas[banco->proxPL-1];
-            banco->proxPL = banco->proxPL -1;
-        }
-    }
+    printf("%s\n", "Tudo ok");
+    return EXIT_SUCCESS;
 }
 
 
