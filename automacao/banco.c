@@ -57,7 +57,30 @@ void atualizar_conta(Banco * banco, Conta * con_atua){
 }
 
 int main(){
-    
+
+    Banco * banco_logic = malloc(sizeof(Banco));
+    banco_logic->proxPL = 0;
+    banco_logic->contas = malloc(1000 * sizeof(Conta *));
+
+    Conta * conta_cleverson = malloc(sizeof(Conta));
+    Conta * conta_levi = malloc(sizeof(Conta));
+    Conta * conta_lorena = malloc(sizeof(Conta));
+
+    conta_cleverson->agencia = "9272-08";
+    conta_cleverson->numero = "234-8";
+    conta_cleverson->saldo = 100000.32;
+
+    conta_levi->agencia = "1203-10";
+    conta_levi->numero = "2020-4";
+    conta_levi->saldo = 20000.50;
+
+    conta_lorena->agencia = "5698-08";
+    conta_lorena->numero = "3456-09";
+    conta_lorena->saldo = 900000.70;
+
+    cadastrar_conta(conta_cleverson,banco_logic);
+    cadastrar_conta(conta_levi,banco_logic);
+    cadastrar_conta(conta_lorena,banco_logic);
 }
 
 
