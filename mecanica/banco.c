@@ -38,12 +38,14 @@ Conta * buscar_conta(Banco * bnc, char * ag, char * num){
 void remover_conta(Banco * bnc, char * num, char * ag){
     int i = 0;
     Conta * c;
-    while(i < bnc->proxPL){
+    bool removeu = false;
+    while(i < bnc->proxPL && !removeu){
         c = bnc->contas[i];
         if(strcmp(c->numero, num)
          && strcmp(c->agencia,ag)){
             bnc->contas[i] = bnc->contas[bnc->proxPL-1];
             bnc->proxPL = bnc->proxPL -1;
+            removeu = true;
          }
          i = i + 1;
     }

@@ -47,7 +47,17 @@ void remover_conta(Banco * banco, Conta * con_rem){
             banco->contas[i] = banco->contas[banco->proxPL-1];
             banco->proxPL = banco->proxPL -1;
         }
+        i = i + 1;
     }
+}
+
+void atualizar_conta(Banco * banco, Conta * con_atua){
+    remover_conta(banco, con_atua);
+    cadastrar_conta(banco, con_atua);
+}
+
+int main(){
+    
 }
 
 
