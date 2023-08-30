@@ -91,5 +91,6 @@ int main(){
     cadastrar_conta(c_adailton, ifbanco);
     cadastrar_conta(c_fp,ifbanco);
     cadastrar_conta(c_xadrez, ifbanco);
+    
     imprima_contas_banco(ifbanco);
 }
