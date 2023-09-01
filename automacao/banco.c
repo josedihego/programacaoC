@@ -16,7 +16,7 @@ typedef struct Banco{
 }Banco;
 
 
-void cadastrar_conta(Conta * conta_nova, Banco * banco){
+void cadastrar_conta( Banco * banco, Conta * conta_nova){
     banco->contas[banco->proxPL] = conta_nova;
     banco->proxPL = banco->proxPL + 1;
 }
@@ -78,9 +78,10 @@ int main(){
     conta_lorena->numero = "3456-09";
     conta_lorena->saldo = 900000.70;
 
-    cadastrar_conta(conta_cleverson,banco_logic);
-    cadastrar_conta(conta_levi,banco_logic);
-    cadastrar_conta(conta_lorena,banco_logic);
+    cadastrar_conta(banco_logic,conta_cleverson);
+    cadastrar_conta(banco_logic, conta_levi);
+    cadastrar_conta(banco_logic, conta_lorena);
+    return EXIT_SUCCESS;
 }
 
 
