@@ -56,6 +56,16 @@ void atualizar_conta(Banco * banco, Conta * con_atua){
     cadastrar_conta(banco, con_atua);
 }
 
+void imprimir_conta(Conta * conta){
+    printf("Conta: ag-%s, num-%s, saldo-R$%.2f\n",
+            conta->agencia, conta->numero, conta->saldo);
+}
+void imprimir_contas(Banco * banco){
+    for(int i = 0; i < banco->proxPL; i = i + 1){
+        imprimir_conta(banco->contas[i]);
+    }
+}
+
 int main(){
 
     Banco * banco_logic = malloc(sizeof(Banco));
@@ -81,6 +91,8 @@ int main(){
     cadastrar_conta(banco_logic,conta_cleverson);
     cadastrar_conta(banco_logic, conta_levi);
     cadastrar_conta(banco_logic, conta_lorena);
+    printf("%s\n","Depois do cadastro");
+    imprimir_contas(banco_logic);
     return EXIT_SUCCESS;
 }
 
