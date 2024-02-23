@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 float altura = 1.71;
-float massa = 120;
+float massa = 70;
 float gravidade = 9.8;
 
 int main() {
