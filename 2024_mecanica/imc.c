@@ -10,3 +10,4 @@ int main() {
   float peso = massa * gravidade;
   printf("Seu peso na Terra: %.2f N", peso);
 }
+// Racionais
