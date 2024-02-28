@@ -1,9 +1,13 @@
 #include <stdio.h>
 
-float massa = 60;
-float altura = 1.85;
+float massa;
+float altura;
 float gravidade = 9.81;
 int main() {
+  printf("Informe seu peso em kilogramas:\n");  
+  scanf("%f",&massa);
+  printf("Informe sua altura em metros:\n");
+  scanf("%f", &altura);
   float IMC = massa / (altura * altura);
   printf("O IMC para pessoa com altura %.2f m e massa %.2f kg : %.5f\n", altura,
          massa, IMC);
