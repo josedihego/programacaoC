@@ -12,4 +12,17 @@ int main() {
   if(IMC < 18.5){
     printf("\nPeso abaixo do normal");
   }
+  else{
+   if(IMC >= 18.5 && IMC < 25){
+    printf("\nPeso normal");
+   }
+   else{
+    if(IMC >=25 && IMC < 30){
+        printf("\nSobrepeso");
+    }
+    else{
+        printf("\nObesidade");
+    }
+   } 
+  }
 }
