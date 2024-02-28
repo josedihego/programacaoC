@@ -1,3 +1,5 @@
+// -*- coding: utf-8 -*-
+
 #include <stdio.h>
 
 float altura = 1.71;
