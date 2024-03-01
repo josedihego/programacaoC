@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 float altura = 1.60;
-float massa = 60.3;
+float massa =90.3;
 float gravidade = 9.81;
 
 int main() {
@@ -17,7 +17,12 @@ int main() {
         printf("Peso normal.");
     }
     else{
-
+        if(IMC >=25 && IMC < 30){
+            printf("Sobrepeso.");
+        }
+        else{
+            printf("Obesidade.");
+        }
     }
   }
 }
