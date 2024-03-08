@@ -18,7 +18,7 @@ int main(){
     }
     else if(delta==0){
         x1 = x2 = (-1*b)/(2*a);
-        printf("Uma raiz real: x1=x2=%.2f\n",x1);
+        printf("Uma raiz real: x1=x2=%.2f",x1);
     }
     else{
         printf("A equação não tem raízes reais.\n");
