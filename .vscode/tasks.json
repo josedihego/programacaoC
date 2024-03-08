@@ -33,6 +33,7 @@
                 "-g",
                 "${file}",
                 "-o",
+                "-lm",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
