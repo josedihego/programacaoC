@@ -2,20 +2,24 @@
 #include<math.h>
 
 int main(){
-    float a, b, c;
+    float a, b, c, delta, x1, x2;
     printf("Informe o valor de a:");
     scanf("%f",&a);
-    printf("Informe o valor de b:");
+    printf("informe o valor de b:");
     scanf("%f",&b);
     printf("Informe o valor de c:");
-    scanf("%f",&c);
-
-    float delta = (b * b) - (4 * a * c);
-    if(delta > 0){
-        float x1 = (-1 * b + sqrt(delta))/(2 * a);
-        float x2 = (-1 * b - sqrt(delta))/(2 * a);
+    scanf("%f", &c);
+    delta = (b*b)-(4*a*c);
+    if(delta >0){
+        x1 = ((-1*b)+sqrt(delta))/(2*a);
+        x2 = ((-1*b)-sqrt(delta))/(2*a);
+        printf("Duas raízes: x1=%.2f e x2=%.2f\n",x1,x2);
+    }
+    else if(delta==0){
+        x1 = x2 = (-1*b)/(2*a);
+        printf("Uma raíz: x1=x2=%.2f\n",x1);
     }
     else{
-
+        printf("Não existem raízes reais para a equação.\n");
     }
 }
