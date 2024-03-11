@@ -13,7 +13,7 @@ int main(){
         printf("SIM\n");
     }
     else{
-        printf("N√O\n");
+        printf("N√ÉO\n");
     }
 
 }

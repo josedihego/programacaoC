@@ -3,7 +3,7 @@
 #include<math.h>
 
 int main(){
-    float a, b, c;//usu·rio vai informar
+    float a, b, c;//usu?rio vai informar
     float delta, x1,x2;
     printf("Informe o valor de a:");
     scanf("%f", &a);
@@ -15,13 +15,13 @@ int main(){
     if(delta > 0){
         x1 = ((-1*b)+ sqrt(delta))/(2*a);
         x2 = ((-1*b)- sqrt(delta))/(2*a);
-        printf("Duas raÌzes: x1=%.2f e x2=%.2f",x1,x2);
+        printf("Duas ra√≠zes: x1=%.2f e x2=%.2f",x1,x2);
     }
-    else if(delta == 0){
-        x1 = x2 = (-1*b)/(2*a);
+    else if(delta==0){
+        x1 = x2 =(-1*b)/(2*a);
         printf("Uma raiz: x1=x2=%.2f",x1);
     }
     else{
-        printf("A equaÁ„o n„o possui raÌzes reais.\n");
+        printf("A equa√ß√£o n√£o possui ra√≠zes reais.\n");
     }
 }
