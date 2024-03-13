@@ -13,13 +13,13 @@ int main(){
    if(delta>0){
     x1 = (-1*b + sqrt(delta))/(2*a);
     x2 = (-1*b - sqrt(delta))/(2*a);
-    printf("Duas raizes reais: x1 = %.2f e x2 = %.2f\n", x1,x2);
+    printf("Duas raízes reais: x1 = %.2f e x2 = %.2f\n", x1,x2);
    }
    else if(delta == 0){
     x1 = x2 = (-1*b)/(2*a);
     printf("Uma raiz real x1=x2 = %.2f", x1);
    }
    else{
-    printf("Nao existem raizes reais para a equacao");
+    printf("Não existem raízes reais para a equação");
    }
 }
