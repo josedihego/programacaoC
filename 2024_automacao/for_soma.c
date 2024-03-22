@@ -5,7 +5,7 @@
 
 int main(){
     float nota;
-    float soma;
+    float soma = 0;
     for(int j=0; j < QNT; j = j + 1){
 
     }
