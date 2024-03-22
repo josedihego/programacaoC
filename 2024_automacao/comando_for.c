@@ -1,10 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
-// mostrem a soma dos 1000 primeiros números pares
+
+#define MAX 1000
+// mostrem a soma dos 1000 primeiros nÃºmeros pares
 int main(){
     int res = 0;
-    for(int j=0;  j< 1000; j = j + 2){
-        printf("%d\n",j);
+    for(int j=0;  j< MAX; j = j + 1){
+        printf("%d\n",j*2);
+        res = res + (j*2);
     }
-    printf("A soma dos 1000 primeiros números pares é: %d",res);
+    printf("A soma dos %d primeiros nÃºmeros pares Ã©: %d\n", MAX, res);
 }
