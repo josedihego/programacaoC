@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-#define QNT 1000
+#define QNT 5
 int main(){
    int soma=0;
    for(int j=0; j < QNT; j = j+1){
