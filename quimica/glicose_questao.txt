@@ -1,0 +1,15 @@
+Uma profissional de saúde informa
+a cada 20 minutos o valor da glicose
+de um paciente.
+Caso o valor seja menor que zero, seu 
+programa deve parar e imprimir a média
+de valores lidos.
+
+180
+150
+100
+130
+100
+140
+-5
+média: (180+150+100+130+100+140)/6 = 133

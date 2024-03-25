@@ -1,0 +1,5 @@
+Crie um programa que lerá valores
+inteiros do usuário até que o usuário
+informe um valor maior que 100 e impar.
+Nesse momento seu programa deve imprimir
+a média dos valores pares informados.

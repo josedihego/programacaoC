@@ -1,0 +1,7 @@
+A chance CF de uma máquina falhar cresce de maneira
+composta segundo um percentual P a cada ciclo de X horas
+de funcionamento.
+(1) Crie um programa que recebe CF, P e X e informa para qual
+a chance da máquina falhar depois de Y horas de funcionamento.
+(2) Crie um programa que calcula quando essa máquina ficará
+obsoleta (quando a chance de falhar atinge 100%).

@@ -1,0 +1,12 @@
+Crie um programa que recebe o valor emprestado,
+a taxa de juros composta e o prazo em mêses do
+financiamento.
+Ao final seu programa deve imprimir o valor total
+a ser pago ao final do prazo estipulado.
+
+
+Ex:
+3 meses
+0.1 siginifica 10%
+R$ 3000
+Valor final: ((3000 * 1.1) * 1.1) * 1.1 = 3993
