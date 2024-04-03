@@ -4,5 +4,6 @@
 
 int main(){
     srand(time(0));
-    int 
+    int aleatorio = rand()%501;
+    printf("%d\n",aleatorio);
 }
