@@ -1,15 +1,19 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-#define NUM_LEITURAS 24*60*6
+#define NUM_LEITURAS 5
 
 int main(){
+    int qnt_ok = 0;
+    int tensao;
     for(int i =0 ; i < NUM_LEITURAS ; i = i +1){
-        //ler a voltagem
-        //testar se esta entre 100V e 250V com um if
-        // se estiver incrementar a quantidade
+      printf("Informe o valor da tensão:");
+      scanf("%d",&tensao);  
+      if(tensao >= 100 && tensao <=250){
+        qnt_ok =  qnt_ok + 1;
+      } 
     }
-    // depois do for
-    // calcular a percentagem
-    // imprimir essa percentagem
+    float percentagem = ((qnt_ok * 1.0)/NUM_LEITURAS) * 100;
+    printf("A percentagem de tempo com voltagem correta é: %.2f %", percentagem);
+   
 }
