@@ -5,15 +5,16 @@
 int main()
 {
     srand(time(0));
-    int n1, n2, resposta;
+    int n1, n2, n3, resposta;
     int n_acertos = 0, n_erros = 0;
     for (int i = 0; i < 10; i = i + 1)
     {
         n1 = rand() % 101;
         n2 = rand() % 101;
-        printf("Qual o valor de %d+%d?\n", n1, n2);
+        n3 = rand() % 101;
+        printf("Qual o valor de %d+%d-%d?\n", n1, n2, n3);
         scanf("%d", &resposta);
-        if (n1 + n2 == resposta)
+        if (n1 + n2 - n3 == resposta)
         {
             n_acertos = n_acertos + 1;
         }
