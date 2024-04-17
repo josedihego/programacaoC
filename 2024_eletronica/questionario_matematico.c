@@ -39,5 +39,7 @@ int main(){
         y = (rand() % 100) + 1;
     }
     printf("Você errou duas seguidas :(\n");
-    printf("Você respondeu %d perguntas e errou %d", n_tentativas, n_erros);
+    printf("Você respondeu %d perguntas e errou %d\n", n_tentativas, n_erros);
+    float percentagem = (n_erros/(n_tentativas*1.0)) * 100;
+    printf("Você errou %.2f %% \n", percentagem);
 }
