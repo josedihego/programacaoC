@@ -1,12 +1,15 @@
-// -*- coding: utf-8 -*-
-
 #include <stdio.h>
 
-float altura = 1.71;
-float massa = 70;
+float altura;
+float massa;
 float gravidade = 9.8;
 
 int main() {
+  printf("Qual sua altura?\n");
+  scanf("%f",&altura);
+  printf("Qual sua massa?\n");
+  scanf("%f",&massa);
+
   float IMC = massa / (altura * altura);
   printf("Seu IMC: %.4f\n", IMC);
   float peso = massa * gravidade;
@@ -28,9 +31,3 @@ int main() {
     }
   }
 }
-/*
-< 18.5	- abaixo do peso
->=18.5 e < 25	- peso normal
->=25 e <  30	- sobrepeso
->=30 obeso
-*/
