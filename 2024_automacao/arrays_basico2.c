@@ -10,6 +10,12 @@ int main(){
         printf("Informe a idade do aluno(a) n°%d: ",i+1);
         scanf("%d", &idades[i]);
     }
+    int soma = 0;
+    for(int i=0; i < NA; i = i +1){
+        soma =  soma + idades[i];
+    }
+    printf("A soma das idades é: %d", soma);
+
 }
 
 
