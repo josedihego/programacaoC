@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "math.h": "c",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "stdio.h": "c"
     }
 }
