@@ -20,14 +20,18 @@ int main(){
     
     int mais_velho = idades[0];
     int mais_nova = idades[0];
+    int p_mv = 0;
+    int p_mn = 0;
     for(int i =1; i < 13; i = i +1){
         if(idades[i] > mais_velho){
             mais_velho = idades[i];
+            p_mv = i;
         }
         if(idades[i] < mais_nova){
             mais_nova  = idades[i];
+            p_mn = i;
         }
     }
-    printf("Idade da pessoa mais velha: %d\n",mais_velho);
-    printf("Idade da pessoa mais jovem é: %d \n", mais_nova);
+    printf("A pessoa n° %d é a mais velha com idade: %d\n",p_mv+1, mais_velho);
+    printf("A pessoa n° %d é a mais nova com idade é: %d \n",p_mn+1, mais_nova);
 }
