@@ -6,6 +6,7 @@
 int main(){
     char nomes_produtos [20][50];
     int qnts_produto [20];
+    int proxPL = 0;
     printf("Informe uma opção: \n\t 1. Cadastrar \n\t 2. Buscar \n\t 3.Atualizar \n\t 4. Sair\n");
     int opcao;
     scanf("%d", &opcao);
@@ -13,6 +14,10 @@ int main(){
     {
         case 1:
         printf("Cadastrar selecionado\n");
+        printf("Informe o nome do produto:");
+        fgets(nomes_produtos[proxPL],50,stdin);
+        printf("Informe a quantidade em estoque:");
+        scanf("%d", &qnts_produto[proxPL]);
         break;
         case 2:
         printf("Buscar selecionado \n");
