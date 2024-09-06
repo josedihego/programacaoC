@@ -13,11 +13,18 @@ int main(){
     printf("\n\t 3.Listar produtos");
     printf("\n\t 4.Remover produtos");
     printf("\n\t 5.Sair\n");
+    int proxPL = 0;
     int opcao;
     scanf("%d", &opcao);
     switch(opcao){
         case 1:
             printf("Cadastrar selecionando\n");
+            printf("Informe o nome do produto:");
+            getchar();
+            fgets(nomes_produtos[proxPL], 70, stdin);
+            printf("Informe a quantidade em estoque:");
+            scanf("%d",&qnts_produtos[proxPL]);
+            proxPL = proxPL +1;
             break;
         case 2:
             printf("Buscar selecionando\n");
