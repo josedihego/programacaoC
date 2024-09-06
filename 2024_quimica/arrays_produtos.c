@@ -28,6 +28,11 @@ int main(){
         break;
         case 4: 
         printf("listar selecionando\n");
+        for(int i =0; i < proxPL; i = i +1){
+            printf("Produto n° %d", i +1);
+            printf("\t Nome produto %s\n", nomes_produtos[i]);
+            printf("\t Quantidade: %d\n", qnts_produto[i]);
+        }
         break;
         case 5:
         printf("Sair selecionado");
