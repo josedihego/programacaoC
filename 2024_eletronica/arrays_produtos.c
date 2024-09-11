@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <math.h>
+#include <string.h>
 
 #define QNT_PROD 5
 #define TAM_NOME_PROD 20
@@ -43,8 +44,16 @@ int main()
             getchar();
             fgets(nome, TAM_NOME_PROD, stdin);
             bool achou = false;
-            while(!achou){
-                
+            int i =0;
+            while(!achou && i < prox_PL){
+                int valor = strcmp(nome, produtos[i]);
+                if(valor ==0) achou = true;
+                else i = i +1;
+            }
+            if(achou){
+                printf("Produto encontrado\n");
+                printf("\t Nome: %s", produtos[i]);
+                printf("\t Quantidade: %d\n", quantidades[i]);
             }
             break;
         case 4:
