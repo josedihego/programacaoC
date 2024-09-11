@@ -38,6 +38,14 @@ int main()
             break;
         case 3:
             printf("Opção buscar selecionada...\n");
+            char nome [TAM_NOME_PROD];
+            printf("Informe o nome do produto buscado:");
+            getchar();
+            fgets(nome, TAM_NOME_PROD, stdin);
+            bool achou = false;
+            while(!achou){
+                
+            }
             break;
         case 4:
             printf("Opção listar selecionada...\n");
