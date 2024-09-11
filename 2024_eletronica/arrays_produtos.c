@@ -25,7 +25,7 @@ int main()
         switch (opcao)
         {
         case 1:
-            printf("Opção inserir selecionada...\\n");
+            printf("Opção inserir selecionada...\n");
             printf("Informe o nome do produto:");
             getchar();
             fgets(produtos[prox_PL], TAM_NOME_PROD, stdin);
@@ -45,7 +45,7 @@ int main()
             {
                 printf("Produto n°# %d\n", i + 1);
                 printf("\t Nome: %s", produtos[i]);
-                printf("\t Quantidade: %d", quantidades[i]);
+                printf("\t Quantidade: %d\n", quantidades[i]);
             }
             break;
         case 5:
