@@ -10,7 +10,12 @@ int main(){
     int quantidades[QNT_PROD];
     char produtos [QNT_PROD][TAM_NOME_PROD];
     int prox_PL = 0;
-    printf("Informe 1.cadastrar\n \t 2.excluir \n \t 3.buscar \n \t 4.sair\n");
+    printf("Selecione uma das opções:\n");
+    printf("\t 1. Cadastrar produto\n");
+    printf("\t 2. Excluir produto\n");
+    printf("\t 3. Buscar produto\n");
+    printf("\t 4. Listar produtos\n");
+    printf("\t 5. Sair do sistema\n");
     int opcao = 0;
     scanf("%d", &opcao);
     switch (opcao)
