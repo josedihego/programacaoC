@@ -21,7 +21,7 @@ int main(){
     switch (opcao)
     {
     case 1:
-        printf("Início do cadastro.\n");
+        printf("Opção inserir selecionada...\\n");
         printf("Informe o nome do produto:");
         getchar();
         fgets(produtos[prox_PL],TAM_NOME_PROD,stdin);
@@ -30,13 +30,16 @@ int main(){
         prox_PL = prox_PL+1;
         break;
     case 2:
-        printf("Início da exclusão\n");
+        printf("Opção excluir selecionada...\\n");
         break;
     case 3:
-        printf("Início da busca\n");
+        printf("Opção buscar selecionada...\\n");
         break;
     case 4:
-        printf("Saindo...\n");
+        printf("Opção listar selecionada...\n");
+        break;
+    case 5:
+        printf("Saindo do sistema...\n");
         break;    
     default:
         printf("Opção inválida\n");
