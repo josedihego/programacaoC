@@ -4,12 +4,17 @@
 #include <stdbool.h>
 
 #define MAX_PROD 10
-#define MAX_NOME 50
+#define TAM_MAX_NOME 50
 
 int main(){
-    char nomes_produtos[MAX_PROD][MAX_NOME];
+    char nomes_produtos[MAX_PROD][TAM_MAX_NOME];
     int qnts_produtos [MAX_PROD];
-    printf("Informe uma das opções: \n \t 1.Cadastrar \n \t 2. Remover \n \t 3. Buscar \n \t 4. Sair \n");
+    printf("Informe uma das opções:\n");
+    printf("\t 1. Cadastrar produto\n");
+    printf("\t 2. Remover produto\n");
+    printf("\t 3. Buscar por nome\n");
+    printf("\t 4. Listar produtos\n");
+    printf("\t 5. Sair do sistema\n");
     int opcao;
     scanf("%d", &opcao);
     switch (opcao)
