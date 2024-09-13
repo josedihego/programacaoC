@@ -35,7 +35,7 @@ int main()
         case 3:
             printf("Listar selecionando\n");
             for(int i = 0; i < proxPL; i = i +1){
-                printf("Produto detalhes\n");
+                printf("Produto detalhes #%d\n", i+1);
                 printf("\t Nome:%s\n", nomes_produtos[i]);
                 printf("\t Quantidade:%d\n", qnts_produtos[i]);
             }
