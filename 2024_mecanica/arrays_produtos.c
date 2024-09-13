@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <stdbool.h>
-
+#include <string.h>
 int main()
 {
     char nomes_produtos[20][70];
@@ -31,6 +31,24 @@ int main()
             break;
         case 2:
             printf("Buscar selecionando\n");
+            printf("Informe o nome buscado:");
+            char nome_buscado [70];
+            fgets(nome_buscado, 70,stdin);
+            bool achou = false;
+            int i =0 ;
+            while(!achou && i< proxPL){
+                int resultado =  strcmp(nome_buscado, nomes_produtos[i]);
+                if(resultado==0) achou = true;
+                else i = i +1;
+            }
+            if(achou){
+                printf("Produto encontrado\n");
+                printf("\t nome: %s\n", nomes_produtos[i]);
+                printf("\t Quantidade %s\n", qnts_produtos[i]);
+            }
+            else{
+                printf("Produto não encontrado. Tente novamente.\n");
+            }
             break;
         case 3:
             printf("Listar selecionando\n");
