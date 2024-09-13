@@ -33,6 +33,7 @@ int main()
             printf("Buscar selecionando\n");
             printf("Informe o nome buscado:");
             char nome_buscado [70];
+            getchar();
             fgets(nome_buscado, 70,stdin);
             bool achou = false;
             int i =0 ;
