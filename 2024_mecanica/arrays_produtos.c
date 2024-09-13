@@ -8,7 +8,7 @@ int main()
     char nomes_produtos[20][70];
     int qnts_produtos[20];
     int proxPL = 0;
-    int opcao;
+    int opcao = 0;
     while (opcao != 5)
     {
         printf("Informe uma das opções:");
