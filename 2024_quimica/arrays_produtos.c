@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <math.h>
+#include <string.h>
 
 int main()
 {
@@ -32,6 +33,25 @@ int main()
             break;
         case 2:
             printf("Buscar selecionado \n");
+            printf("Informe o nome do produto buscado:");
+            char nome_buscado [50];
+            getchar();
+            fgets(nome_buscado, 50, stdin);
+            bool achou = false;
+            int i =0 ;
+            while(!achou && i < proxPL){
+                int res_comp = strcmp(nome_buscado, nomes_produtos[i]);
+                if(res_comp==0) achou =  true;
+                else i = i +1;
+            }
+            if(achou){
+                printf("Produto encontrado:\n");
+                printf("\t nome:%s\n", nomes_produtos[i]);
+                printf("\t quantidade:%d\n", qnts_produto[i]);
+            }
+            else{
+                printf("Produto não encontrado. Tente novamente\n");
+            }
             break;
         case 3:
             printf("Atualizar selecionando\n");
