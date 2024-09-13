@@ -9,6 +9,7 @@
 int main(){
     char nomes_produtos[MAX_PROD][TAM_MAX_NOME];
     int qnts_produtos [MAX_PROD];
+    int proxPL = 0;
     printf("Informe uma das opções:\n");
     printf("\t 1. Cadastrar produto\n");
     printf("\t 2. Remover produto\n");
@@ -21,6 +22,11 @@ int main(){
     {
         case 1:
         printf("Cadastrar selecionado\n");
+        printf("Informe o nome do produto: ");
+        fgets(nomes_produtos[proxPL], TAM_MAX_NOME, stdin);
+        printf("Informe a quantidade:");
+        scanf("%d", &qnts_produtos[proxPL]);
+        proxPL = proxPL + 1;
         break;
         case 2:
         printf("Remover selecionado\n");
