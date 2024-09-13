@@ -8,15 +8,16 @@ int main()
     char nomes_produtos[20][50];
     int qnts_produto[20];
     int proxPL = 0;
-    printf("Informe uma opção:\n");
-    printf("\t 1. Cadastrar produto \n");
-    printf("\t 2. Buscar produto \n");
-    printf("\t 3. Atualizar produto\n");
-    printf("\t 4. Listar produtos\n");
-    printf("\t 5. Sair do sistema\n");
+
     int opcao;
     while (opcao != 5)
     {
+        printf("Informe uma opção:\n");
+        printf("\t 1. Cadastrar produto \n");
+        printf("\t 2. Buscar produto \n");
+        printf("\t 3. Atualizar produto\n");
+        printf("\t 4. Listar produtos\n");
+        printf("\t 5. Sair do sistema\n");
         scanf("%d", &opcao);
         switch (opcao)
         {
