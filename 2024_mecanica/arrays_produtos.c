@@ -45,7 +45,7 @@ int main()
             if(achou){
                 printf("Produto encontrado\n");
                 printf("\t nome: %s\n", nomes_produtos[i]);
-                printf("\t Quantidade %s\n", qnts_produtos[i]);
+                printf("\t Quantidade %d\n", qnts_produtos[i]);
             }
             else{
                 printf("Produto não encontrado. Tente novamente.\n");
