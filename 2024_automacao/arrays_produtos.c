@@ -29,10 +29,13 @@ int main(){
         printf("Buscar selecionado\n");
         break;
         case 4:
+        printf("Listar selecionado\n");
+        break;
+        case 5:
         printf("Sair selecionado\n");
         break;
         default:
-        printf("Opção inválida. Tente novamente.");
+        printf("Opção inválida. Tente novamente.\n");
         break;
     }
 
