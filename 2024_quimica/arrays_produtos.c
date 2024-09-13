@@ -8,7 +8,12 @@ int main()
     char nomes_produtos[20][50];
     int qnts_produto[20];
     int proxPL = 0;
-    printf("Informe uma opção: \n\t 1. Cadastrar \n\t 2. Buscar \n\t 3.Atualizar \n\t 4. Listar \n \t5. Sair\n");
+    printf("Informe uma opção:\n");
+    printf("\t 1. Cadastrar produto \n");
+    printf("\t 2. Buscar produto \n");
+    printf("\t 3. Atualizar produto\n");
+    printf("\t 4. Listar produtos\n");
+    printf("\t 5. Sair do sistema\n");
     int opcao;
     while (opcao != 5)
     {
@@ -22,6 +27,7 @@ int main()
             fgets(nomes_produtos[proxPL], 50, stdin);
             printf("Informe a quantidade em estoque:");
             scanf("%d", &qnts_produto[proxPL]);
+            proxPL = proxPL + 1;
             break;
         case 2:
             printf("Buscar selecionado \n");
@@ -31,12 +37,6 @@ int main()
             break;
         case 4:
             printf("listar selecionando\n");
-            for (int i = 0; i < proxPL; i = i + 1)
-            {
-                printf("Produto n° %d", i + 1);
-                printf("\t Nome produto %s\n", nomes_produtos[i]);
-                printf("\t Quantidade: %d\n", qnts_produto[i]);
-            }
             break;
         case 5:
             printf("Sair selecionado");
