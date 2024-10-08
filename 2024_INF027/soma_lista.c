@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#define MAX 10
+#define MAX 4
 int main(){
     int soma = 0;
     int L [MAX];
@@ -10,5 +10,9 @@ int main(){
         printf("Informe o %d° valor: ", i+1);
         scanf("%d", &L[i]);
     }
+    for(int i=0; i < MAX; i = i +1){
+        soma = soma + L[i];
+    }
+    printf("A soma dos %d valores digitados é: %d", MAX, soma);
     return EXIT_SUCCESS;
 }
