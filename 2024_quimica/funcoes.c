@@ -12,6 +12,9 @@ int somar_valores(int v [], int q){
     }
     return soma;
 }
+int calcular_media (int v[], int q){
+    return somar_valores(v,q)/q;
+}
 
 int main(){
     int valores [TAM];
