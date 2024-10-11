@@ -15,6 +15,13 @@ int somar(int v [], int tam){
 int calcular_media(int v [], int tam){
     return somar(v,tam)/tam;
 }
+int buscar_maior(int v [], int tam){
+    int maior = v[0];
+    for(int i = 1; i < tam; i = i +1){
+        if(v[i] > maior) maior = v[i];
+    }
+    return maior;
+}
 
 int main(){
   int valores[TAM]; 
