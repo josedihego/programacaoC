@@ -19,4 +19,6 @@ int main(){
         printf("Informe o valor de n°%d: ", i+1);
         scanf("%d", &valores[i]);
     }
+    int res = somar_valores(valores,MAX);
+    printf("Soma dos valores: %d\n", res);
 }
