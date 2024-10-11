@@ -12,6 +12,9 @@ int somar(int v [], int tam){
     }
     return soma;
 }
+int calcular_media(int v [], int tam){
+    return somar(v,tam)/tam;
+}
 
 int main(){
   int valores[TAM]; 
@@ -21,4 +24,6 @@ int main(){
   }   
   int res = somar(valores,TAM);
   printf("A soma dos valores é: %d\n", res);
+  int media = calcular_media(valores,TAM);
+  printf("Média dos valores é: %d\n",media);
 }
