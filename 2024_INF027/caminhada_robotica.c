@@ -22,6 +22,7 @@ int main()
     while (x2 != 0 && y2 != 0)
     {
         float d = calcular_distancia(x1, y1, x2, y2);
+        printf("d= %f\n", d);
         distancia_total = distancia_total + d;
         x1 = x2;
         y1 = y2;
@@ -30,5 +31,8 @@ int main()
         printf("Informe a coordenada  y do próximo ponto:");
         scanf("%f", &y2);
     }
+    float d = calcular_distancia(x1, y1, x2, y2);
+    printf("d= %f\n", d);
+    distancia_total = distancia_total + d;
     printf("Fim do percurso. Distância percorrida: %.2f", distancia_total);
 }
