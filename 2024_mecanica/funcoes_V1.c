@@ -9,9 +9,16 @@ float somar(float valores [], int tamanho){
     return soma;
 }
 
+float media(float valores [], int tamanho){
+     float media = somar(valores,tamanho)/tamanho;
+     return media;
+}
+
 int main(){
-    float valores [] ={56.6,67.4,12.4,-34.5,10,25,12,9,-3,30};
+    float valores [10] ={56.6,67.4,12.4,-34.5,10,25,12,9,-3,30};
     float soma = somar(valores, 10);
     printf("Soma = %.2f\n", soma);
+    float med = media(valores,10);
+    printf("Média = %.2f\n",med);
 }
 
