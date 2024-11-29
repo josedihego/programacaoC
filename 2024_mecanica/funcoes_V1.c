@@ -10,8 +10,8 @@ float somar(float valores [], int tamanho){
 }
 
 int main(){
-    float valores [] ={78.8,40.5,20.7,-10.7,89,34.5,-10,34.5,35.8};
-    float soma = somar(valores, 9);
+    float valores [] ={56.6,67.4,12.4,-34.5,10,25,12,9,-3,30};
+    float soma = somar(valores, 10);
     printf("Soma = %.2f\n", soma);
 }
 
