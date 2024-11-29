@@ -8,7 +8,7 @@ float somar(float valores [], int tamanho){
         soma = soma + valores[i];
     }
     return soma;
-} float valores [] = {198,-   30,45.6,67.9,90.5,81,-5,43.5,82.7,-32.8};
+}
 
 float mediar(float valores [], int tamanho){
     float soma = somar(valores,tamanho);
