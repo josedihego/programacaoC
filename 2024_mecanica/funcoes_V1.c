@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// https://docs.google.com/spreadsheets/d/1GKeDmZiCP3Ed3s4054SZbrOWETzltM6FslqZCXN2vbE/edit?usp=sharing
+
 float somar(float valores [], int tamanho){
     float soma = 0;
     for(int i=0; i<tamanho; i = i+1){
