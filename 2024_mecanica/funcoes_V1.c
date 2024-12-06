@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 // https://docs.google.com/spreadsheets/d/1GKeDmZiCP3Ed3s4054SZbrOWETzltM6FslqZCXN2vbE/edit?usp=sharing
 
@@ -16,8 +17,15 @@ float media(float valores [], int tamanho){
      return media;
 }
 
-int qnt_ocorrencias(char m[], char maquinas[][3], int tamanho){
 
+int contar_ocorrencias(char maquinas[][3], char maq_bus[], int qnt){
+    int ocorrencias = 0;
+    for(int i = 0 ; i < qnt ; i = i +1){
+        if (strcmp(maquinas[i],maq_bus)==0){
+            ocorrencias = ocorrencias + 1;
+        }
+    }
+    return ocorrencias;
 }
 
 int main(){
