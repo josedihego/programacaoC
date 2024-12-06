@@ -31,9 +31,11 @@ int contar_ocorrencias(char maquinas[][3], char maq_bus[], int qnt){
 int main(){
     float valores [10] ={56.6,67.4,12.4,-34.5,10,25,12,9,-3,30};
     char maquinas [10][3]= {"M2","M2","M3","M1","M1","M3","M3","M1","M4","M1"};
+    int oc_M1 = contar_ocorrencias(maquinas,"M1",10);
     float soma = somar(valores, 10);
     printf("Soma = %.2f\n", soma);
     float med = media(valores,10);
     printf("Média = %.2f\n",med);
+    printf("Número ocorrências M1: %d\n",oc_M1);
 }
 
