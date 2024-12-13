@@ -36,6 +36,19 @@ int contar_ocorrencias(char nome [], char maquinas[][5], int quantidade){
             ocorrencias = ocorrencias + 1;
         }
     }
+    return ocorrencias;
+}
+
+float media_por_maquina(char nome [], char maquinas [][5], float valores[], int quantidade){
+    float soma = 0.0;
+    int ocorrencias = 0;
+    for(int i =0; i < quantidade ; i = i+1){
+        if(strcmp(nome, maquinas[i])==0){
+            ocorrencias = ocorrencias +1;
+            soma = soma + valores[i];
+        }
+    }
+    return soma/ocorrencias;
 }
 
 int main(){
@@ -45,5 +58,9 @@ int main(){
     printf("Soma = %.2f\n", res);
     float media = mediar(valores,10);
     printf("Média= %.2f\n",media);
+    int oco_M1 = contar_ocorrencias("M1",maquinas,10);
+    printf("Ocorrências M1: %d\n", oco_M1);
+    float media_M1 = media_por_maquina("M1", maquinas, valores, 10);
+    printf("Média de M1: %.3f\n", media_M1);
     
 }
