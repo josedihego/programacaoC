@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
+#include<string.h>
 
 //https://docs.google.com/spreadsheets/d/1ZhWw25FYJLQZORINhKi68sgUt3B6kTMCF_QbZcrrsxs/edit?usp=sharing
 
@@ -26,6 +27,15 @@ float maximo(float valores[], int tamanho){
         }
     }
     return max;
+}
+
+int contar_ocorrencias(char nome [], char maquinas[][5], int quantidade){
+    int ocorrencias = 0;
+    for(int i = 0; i < quantidade; i = i +1){
+        if (strcmp(nome, maquinas[i])==0){
+            ocorrencias = ocorrencias + 1;
+        }
+    }
 }
 
 int main(){
