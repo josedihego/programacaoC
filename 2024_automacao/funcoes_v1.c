@@ -27,12 +27,14 @@ int contar_ocorrencias(char maquinas [][3], char maq_bus [3], int qnt_maquinas){
 
 float media_por_maquina(char maquina [], char maquinas [][3], float valores [], int quantidade){
         float soma = 0.0;
+        int qnt_encontrada =0;
         for(int i =0; i <quantidade; i = i +1){
             if(strcmp(maquina, maquinas[i])==0){
                 soma = soma + valores[i];
+                qnt_encontrada = qnt_encontrada+1;
             }
         }
-        return soma/quantidade;
+        return soma/qnt_encontrada;
 }
 
 int main(){
@@ -41,8 +43,10 @@ int main(){
     int qnt_M1 = contar_ocorrencias(maquinas, "M1", 10);
     float res = somar(valores,10);
     float media = calc_media(valores,10);
+    float media_M1 = media_por_maquina("M1",maquinas, valores, 10);
     printf("Soma= %.2f\n", res);
     printf("Média = %.2f\n",media);
     printf("Qnt de máquinas M1 é %d\n", qnt_M1);
+    printf("Média da máquina M1 é: %.2f\n", media_M1);
 
 }
