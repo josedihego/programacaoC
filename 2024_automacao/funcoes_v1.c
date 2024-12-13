@@ -25,6 +25,16 @@ int contar_ocorrencias(char maquinas [][3], char maq_bus [3], int qnt_maquinas){
      return ocorrencias;
 }
 
+float media_por_maquina(char maquina [], char maquinas [][3], float valores [], int quantidade){
+        float soma = 0.0;
+        for(int i =0; i <quantidade; i = i +1){
+            if(strcmp(maquina, maquinas[i])==0){
+                soma = soma + valores[i];
+            }
+        }
+        return soma/quantidade;
+}
+
 int main(){
     float valores [] = {78, 67.5, 92, 108, -3, 4, 9, 25,-50.8,120.4};
     char maquinas [10][3] = {"M1","M3","M4","M3","M1","M1","M2","M1","M3","M3"};
