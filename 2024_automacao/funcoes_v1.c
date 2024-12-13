@@ -39,14 +39,18 @@ float media_por_maquina(char maquina [], char maquinas [][3], float valores [], 
 
 int main(){
     float valores [] = {78, 67.5, 92, 108, -3, 4, 9, 25,-50.8,120.4};
+    char lista_maquinas [4][3] = {"M1","M2","M3","M4"}; 
     char maquinas [10][3] = {"M1","M3","M4","M3","M1","M1","M2","M1","M3","M3"};
     int qnt_M1 = contar_ocorrencias(maquinas, "M1", 10);
     float res = somar(valores,10);
     float media = calc_media(valores,10);
-    float media_M1 = media_por_maquina("M1",maquinas, valores, 10);
+    
     printf("Soma= %.2f\n", res);
     printf("Média = %.2f\n",media);
     printf("Qnt de máquinas M1 é %d\n", qnt_M1);
-    printf("Média da máquina M1 é: %.2f\n", media_M1);
+    for(int i=0; i < 4; i = i +1){
+        float media_M = media_por_maquina(lista_maquinas[i],maquinas, valores, 10);
+        printf("Média da máquina %s é: %.2f\n",lista_maquinas[i], media_M);
+    }
 
 }
