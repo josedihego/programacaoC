@@ -3,8 +3,7 @@
 
 #define MAX 1000
 
-
-x=2, y=2, z=2x=2, y=2, z=2int calc_raiz(int x, int y, int z){
+int calc_raiz(int x, int y, int z){
     int res = 3 * (x*x)+ 2 *(y*y*y) - 7*(z*z);
     return res;
 }
