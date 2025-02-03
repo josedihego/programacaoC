@@ -39,6 +39,16 @@ int main(){
     bool ja_contido = false;
     while(!ja_contido){
         proximo = calc_proximo(valores[pos-1]);
-
+        bool presente = esta_contido(valores,pos,proximo);
+        if(presente){
+            ja_contido = true;
+        }
+        else{
+            valores[pos] = proximo;
+            pos = pos +1;
+        }
+    }
+    for(int i = 0; i < pos; i = i+1){
+        printf("%d\n", valores[i]);
     }
 }
