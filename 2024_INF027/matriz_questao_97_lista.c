@@ -82,7 +82,7 @@ int main(){
 
     int i = 0, j = 4;
     while( i<5 && j>=0){
-        int temp = matrix[i][i];
+        temp = matrix[i][i];
         matrix[i][i] = matrix[i][j];
         matrix[i][j] = temp; 
         i = i +1;
