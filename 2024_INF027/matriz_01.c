@@ -56,6 +56,15 @@ int main(){
         break;
         case 3:
         //mostrar soma diagonal
+        // mostramos a soma da diagonal
+        //(0,0)(1,1)(2,2)(3,3)(4,4)(5,5)
+        int soma = 0;
+        for(int i =0 ; i <=5; i = i +1){
+            soma = soma + matrix[i][i];
+        }
+        printf("Soma dos elementos da diagonal\n");
+        printf("\t(0,0)(1,1)(2,2)(3,3)(4,4)(5,5) é: ");
+        printf("%d\n", soma);
         break;
         default:
         printf("Opção inválida. Fim do programa\n");
