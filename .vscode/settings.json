@@ -3,6 +3,7 @@
         "math.h": "c",
         "unistd.h": "c",
         "stdio.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "string.h": "c"
     }
 }
