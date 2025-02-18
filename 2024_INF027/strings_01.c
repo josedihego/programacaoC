@@ -21,6 +21,9 @@ int main(){
     printf("Tamanho do nome: %zu\n", strlen(nome));
     printf("Tamanho do nome com nossa função é: %d\n",
     calc_tam_texto(nome));
+    char nome_douglas [30] = "Douglas Rodrigues";
+    printf("tamanho nome douglas é: %d\n", calc_tam_texto(nome_douglas));
+
     
 
 }
