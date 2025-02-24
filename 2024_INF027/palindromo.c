@@ -16,6 +16,8 @@ int main(){
     while(texto[pos_zero]!='\0'){
         pos_zero = pos_zero +1;
     }
+    pos_zero = pos_zero -1;
+    texto[pos_zero]='\0';
     int j = 0;
     for(int i = pos_zero-1; i >=0; i = i -1){
         invertido[j] = texto[i];
