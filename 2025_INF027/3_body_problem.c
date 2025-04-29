@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <math.h>
 
 int main(){
     int x1, y1, r1;
@@ -18,7 +19,12 @@ int main(){
     scanf("%d",&y2);
     printf("Informe o raio r2: ");
     scanf("%d",&r2);
+
+    float distancia = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+
     bool dentro = (x1+r1 < x2+r2 && y1+r1<y2+r2 ) || (x2+r2 < x1+ r1 && y2+r2 < y1+r1);
+
+
 
     if(x1==x2 && y1==y2 && r1==r2){
         printf("Circulos se intersectam em infinitos pontos");
@@ -28,6 +34,15 @@ int main(){
     }
     else if(dentro && (x1+r1==x2+r2 || y1+r1==y2+r2)){
         printf("Um dos círculos esta dentro do outro e se tocam em um ponto");
+    }
+    else if (distancia > (r1+r2)){
+        printf("Os circulos não se intersectam e estão distantes um do outro\n");
+    }
+    else if(distancia == (r1+r2)){
+        printf("Os circulos se intersectam em um único ponto e estão um fora do outro\n");
+    }
+    else{
+        printf("Os círculos se intersectam em dois pontos\n");
     }
 
 
