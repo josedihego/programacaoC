@@ -12,4 +12,6 @@ int main(){
         somatorio = somatorio + (i * 2);
     }
     printf("Somatório = %d\n", somatorio);
+    float media = somatorio/100;
+    printf("Média = %.2f\n", media);
 }
