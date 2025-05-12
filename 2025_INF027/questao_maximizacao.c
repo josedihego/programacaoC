@@ -29,52 +29,37 @@ int main(){
     B = 0;
     if(b1 < a1 && b2 < a2 && b3 < a3){
         B = -1;
+        printf("(%d%d%d, %d)\n", a3,a2,a1, B);
     }
     else if(a1 < b1 && a2 < b2 && a3 < b3){
         A = -1;
+        printf("(%d, %d%d%d)\n", A, b3,b2,b1);
     }
     else{
-        if(a3 < b3){
-            A = A + 0 * 100;
-            B = B + b3 * 100;
-        }
-        else if( a3 > b3){
-            B = B + 0 * 100;
-            A = A + a3 * 100;
-        }
-        else{
-            A = A + a3 * 100;
-            B = B + b3 * 100;
-        }
-
-        if(a2 < b2){
-            A = A + 0 * 10;
-            B = B + b2 * 10;
-        }
-        else if( a2 > b2){
-            B = B + 0 * 10;
-            A = A + a2 * 10;
-        }
-        else{
-            A = A + a2 * 10;
-            B = B + b2 * 10;
-        }
-
-        if(a1 < b1){
-            A = A + 0 * 1;
-            B = B + b1 * 1;
-        }
-        else if( a1 > b1){
-            B = B + 0 * 1;
-            A = A + a1 * 1;
-        }
-        else{
-            A = A + a1 * 1;
-            B = B + b1 * 1;
-        }
-        
+      printf("(");
+      if(a3 >= b3){
+        printf("%d",a3);
+      }
+      if(a2>=b2){
+        printf("%d",a2);
+      }
+      if(a1>=b1){
+        printf("%d",a1);
+      }
+      printf(" e ");
+      if(b3>=a3){
+        printf("%d",b3);
+      }
+      if(b2>=a2){
+        printf("%d",b2);
+      }
+      if(b1>=a1){
+        printf("%d",b1);
+      }
+      printf(")");
+    
     }
-    printf("(%d, %d)\n", A, B);
+    
     
 
 
