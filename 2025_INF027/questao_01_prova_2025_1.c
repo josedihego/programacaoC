@@ -35,6 +35,6 @@ int main(){
         printf("VÁLIDO\n");
     }
     else{
-        printf("INVÀLIDO\n");
+        printf("INVÁLIDO\n");
     }
 }
