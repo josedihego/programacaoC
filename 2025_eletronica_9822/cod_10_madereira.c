@@ -32,4 +32,15 @@ int main(){
     // colocar  a máquina para cortar pedaços de 2.2 metros
 
     // Mostrar qual o melhor esquema de corte
+    if(ganho_5 > ganho_15 && ganho_5 > ganho_22){
+
+    }
+    else{
+        if(ganho_15 > ganho_22){
+
+        }
+        else{
+
+        }
+    }
 }
