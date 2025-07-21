@@ -13,6 +13,20 @@ int main()
     printf("Informe o texto buscado:");
     fgets(busca, 200, stdin);
 
+    //limpeza do \n  
+    int k = 0;
+    while(texto[k]!='\0'){
+        k = k + 1;
+    }
+    texto[k-1]='\0';
+
+    k = 0;
+    while(busca[k]!='\0'){
+        k = k + 1;
+    }
+    busca[k-1]='\0';
+
+
     int i = 0;
     bool eh_sub = false;
     while (texto[i] != '\0' && eh_sub == false)
@@ -37,6 +51,6 @@ int main()
     }
     else
     {
-        printf("%s é substring de %s\n", busca, texto);
+        printf("%s NÃO é substring de %s\n", busca, texto);
     }
 }
