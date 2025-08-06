@@ -1,1 +1,8 @@
 T
+# Ignore compiled C binaries and objects in .github/
+*.o
+*.exe
+*.out
+*.bin
+*.so
+*.dll
