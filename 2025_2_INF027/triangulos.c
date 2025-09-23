@@ -10,9 +10,27 @@ int main(){
     printf("Informe o lado3:");
     scanf("%f", &lado3);
 
-    if(lado1+lado2 > lado3 ||
-        lado1+lado3 > lado2 ||
-        lado2 + lado3 > lado1){
+    float lado_maior;
+    float soma_demais;
+    //NOVO
+    if(lado1 > lado2 && lado1 > lado3){
+        lado_maior = lado1;  // significa recebe (atribuição)
+        soma_demais = lado2+lado3;
+    }
+    else{
+        if(lado2 > lado3){
+            lado_maior = lado2;
+            soma_demais = lado1 + lado3;
+        }
+        else{
+            lado_maior = lado3;
+            soma_demais = lado1+lado2;
+        }
+    }
+    //NOVO
+
+
+    if(soma_demais > lado_maior){
        printf("Temos um triângulo\n"); 
        if(lado1==lado2 && lado2==lado3){
         printf("Triângulo equilátero\n");
