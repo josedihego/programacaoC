@@ -5,7 +5,7 @@ int main(){
     int c1,c2,c3,c4,c5,c6,c7,c8,c9;
     int d1,d2;
     printf("Informe seu CPF:");
-    scanf("%d%d%d.%d%d%d.%d%d%d-%d%d",&c1,&c2,&c3,&c4,&c5,&c6,&c7,&c8,&c9,&d1,&d2);
+    scanf("%1d%1d%1d.%1d%1d%1d.%1d%1d%1d-%1d%1d",&c1,&c2,&c3,&c4,&c5,&c6,&c7,&c8,&c9,&d1,&d2);
     int soma = (c1*10)+(c2*9)+(c3*8)+(c4*7)+(c5*6)+(c6*5)+(c7*4)+(c8*3)+(c9*2);
     int resto = soma % 11;
     int div1, div2;
