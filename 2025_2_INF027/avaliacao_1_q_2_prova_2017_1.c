@@ -43,6 +43,39 @@ int main(){
     }
     else{
         // vai testar se o jogador ganhou no bicho
+        int grupo_aposta = (N_d * 10) + N_u;
+        if(grupo_aposta==0){
+            grupo_aposta = 100;
+        }
+        if(grupo_aposta%4==0){
+            grupo_aposta = grupo_aposta/4;
+            grupo_aposta = grupo_aposta -1;
+        }
+        else{
+            grupo_aposta = grupo_aposta/4;
+        }
+        int grupo_sorteio = (M_d * 10) + M_u;
+        if(grupo_sorteio ==0){
+            grupo_sorteio = 100;
+        }
+        if(grupo_sorteio%4==0){
+            grupo_sorteio = grupo_sorteio/4;
+            grupo_sorteio = grupo_sorteio -1;
+        }
+        else{
+            grupo_sorteio = grupo_sorteio/4;
+        }
+        if(grupo_aposta==grupo_sorteio){
+            premio = 16 * V;
+        }
+        
         
     }
+    if(premio > 0){
+        printf("Parabéns, você ganhou %.2f\n",premio);
+    }
+    else{
+        printf("Não foi dessa vez! A banca sempre ganha!");
+    }
+    return EXIT_SUCCESS;
 }
