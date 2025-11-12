@@ -12,6 +12,10 @@ int calc_pares(int valores [], int tam){
     return qnt;
 }
 
+void ordenar(int valores [], int tam){
+    
+}
+
 int main(){
     srand(time(NULL));
     int * numeros;
