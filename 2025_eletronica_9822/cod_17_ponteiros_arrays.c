@@ -13,8 +13,12 @@ int calc_pares(int valores [], int tam){
 }
 
 void ordenar(int valores [], int tam){
-    
+
 }
+
+// crie uma função que recebe dois arrays,
+// informa qual deles apresenta a maior soma de valores
+// e ao final imprime todos os valores dos dois arrays em ordem
 
 int main(){
     srand(time(NULL));
