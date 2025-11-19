@@ -43,6 +43,9 @@ void imprimir_array(int valores [], int tam){
 // informa qual deles apresenta a maior soma de valores
 // e ao final imprime todos os valores dos dois arrays em ordem
 
+void x_tudo(int listaP [], int tamP, int listaS [], int tamS){
+    
+}
 
 
 int main(){

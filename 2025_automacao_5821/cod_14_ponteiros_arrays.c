@@ -19,6 +19,7 @@ int main(){
     numeros = malloc(10 * sizeof(int));
     for(int j=0; j < 10 ; j = j+1){
         numeros[j] = rand()%100;
+        //*(numeros+j) = rand()%100;// equivalente a linha de cima
         printf("%d, ", numeros[j]);
     }
     printf("]\n");
