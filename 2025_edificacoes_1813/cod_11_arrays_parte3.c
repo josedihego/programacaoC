@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdbool.h>
 
 #define T 10
 
@@ -11,6 +12,17 @@ void imprimir_lista(int valores[], int tam){
     }
     printf("]");
 }
+bool contido_lista(int valores [], int tam, int buscado){
+    bool achei = false;
+    int p = 0;
+    while(!achei && p < tam){
+        if(buscado == valores[p]){
+            achei = true;
+        }
+        p = p +1;
+    }
+    return achei;
+}
 
 int main(){
     srand(time(NULL));
@@ -19,4 +31,12 @@ int main(){
         lista[i] = rand()%100;
     }
     imprimir_lista(lista, T);
+    int buscado = 35;
+    bool tem = contido_lista(lista, T, buscado);
+    if(tem){
+        printf("O número %d esta na lista\n", buscado);
+    }
+    else{
+        printf("O número %d NÃO esta na lista\n", buscado);
+    }
 }
