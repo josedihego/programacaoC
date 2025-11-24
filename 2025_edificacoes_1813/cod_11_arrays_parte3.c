@@ -23,6 +23,8 @@ bool contido_lista(int valores [], int tam, int buscado){
     }
     return achei;
 }
+// crie uma função chamada filtro, essa função
+// filtra e imprime apenas os números pares entre 20 e 40
 
 int main(){
     srand(time(NULL));
