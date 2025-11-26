@@ -22,8 +22,8 @@ bool contido_lista(int valores [], int tam, int buscado){
         p = p +1;
     }
     return achei;
-}
-// crie uma função chamada filtro, essa função
+}// crie uma função chamada filtro, essa função
+
 // filtra e imprime apenas os números pares entre 20 e 40
 
 int main(){
