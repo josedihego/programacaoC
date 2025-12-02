@@ -11,6 +11,8 @@ int main()
     int prox_posicao;
     printf("Informe uma posição: ");
     scanf("%d", &posicao_atual);
+    // conto o primeiro elemento sempre
+    quantidades[barra[0]] = quantidades[barra[0]] + 1;
     while (barra[posicao_atual - 1] != 0)
     {
         printf("Informe uma posição:");
@@ -18,18 +20,24 @@ int main()
         // da esquerda para a direita
         if (prox_posicao > posicao_atual)
         {
-            for (int p = posicao_atual - 1; p < prox_posicao; p = p + 1)
+            printf("da esquerda para a direita: [");
+            for (int p = posicao_atual; p < prox_posicao; p = p + 1)
             {
+                printf("%d ",barra[p]);
                 quantidades[barra[p]] = quantidades[barra[p]] + 1;
             }
+            printf("]\n");
         }
         // da direita para a esquerda
         else
         {
-            for (int p = posicao_atual - 1; p > prox_posicao; p = p - 1)
+            printf("da direita para a esquerda: [");
+            for (int p = posicao_atual - 2; p >= prox_posicao-1; p = p - 1)
             {
+                printf("%d ",barra[p]);
                 quantidades[barra[p]] = quantidades[barra[p]] + 1;
             }
+            printf("]\n");
         }
         posicao_atual = prox_posicao;
     }
