@@ -9,6 +9,6 @@ int main()
     for (int i = 0; i < 10; i = i + 1){
         int aleatorio = rand() % 501;
         printf("%d\n", aleatorio);
-        sleep(3);
+        sleep(2);
     }
 }
