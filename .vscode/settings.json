@@ -1,11 +1,17 @@
 {
-    "files.autoSave": "off",
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "C_Cpp.intelliSenseEngine": "Tag Parser",
-    "C_Cpp.errorSquiggles": "disabled",
-    "C_Cpp.autocomplete": "disabled",
-    "editor.formatOnSave": false,
+    "files.associations": {
+        "array": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "utility": "c",
+        "stdlib.h": "c",
+        "limits.h": "c",
+        "time.h": "c"
+    },
     "code-runner.executorMap": {
-        "c": ""
-    }
+        "c": "cd $dir && clang $fileName -o $fileNameWithoutExt -lm && $dir$fileNameWithoutExt"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true
 }

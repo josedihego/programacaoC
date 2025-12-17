@@ -1,13 +1,21 @@
 {
-    "version": "2.0.0",
     "tasks": [
         {
-            "label": "build-c",
-            "type": "shell",
-            "command": "/usr/bin/clang",
+            "type": "cppbuild",
+            "label": "C/C++: build active file",
+            "command": "${command:workbench.action.tasks.runTask}",
+            "windows": {
+                "command": "gcc"
+            },
+            "linux": {
+                "command": "/usr/bin/gcc"
+            },
+            "osx": {
+                "command": "/usr/bin/clang"
+            },
             "args": [
+                "-fdiagnostics-color=always",
                 "-g",
-                "-O0",
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
@@ -22,7 +30,9 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "detail": "Automatically uses clang on macOS, gcc on Linux."
         }
-    ]
+    ],
+    "version": "2.0.0"
 }
