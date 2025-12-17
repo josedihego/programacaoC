@@ -4,20 +4,11 @@
         {
             "name": "macOS",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}"
             ],
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c17",
             "intelliSenseMode": "clang-x64"
-        },
-        {
-            "name": "Linux",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "compilerPath": "/usr/bin/gcc",
-            "cStandard": "c17",
-            "intelliSenseMode": "gcc-x64"
         }
     ]
 }
