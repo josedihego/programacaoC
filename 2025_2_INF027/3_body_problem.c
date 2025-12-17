@@ -24,6 +24,6 @@ int main(){
         printf("👍 SIM\n");
     }
     else{
-        printf("👎 NÃO\n");
+        printf("👎 NÃO v\n");
     }
 }

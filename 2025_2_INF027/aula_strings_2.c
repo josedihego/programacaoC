@@ -24,5 +24,5 @@ int main()
         }
         i = i + 1;
     }
-    printf("Numero de vogais em %s e %d \n", nome, num_vog);
+    printf("Número de vogais em %s e %d \n", nome, num_vog);
 }
