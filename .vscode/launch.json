@@ -1,7 +1,25 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": []
+    "configurations": [
+        {
+            "name": "Debug C (macOS)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "cwd": "${fileDirname}",
+            "MIMode": "lldb",
+            "externalConsole": true,
+            "preLaunchTask": "build-c"
+        },
+        {
+            "name": "Debug C (Linux)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "cwd": "${fileDirname}",
+            "MIMode": "gdb",
+            "externalConsole": true,
+            "preLaunchTask": "build-c"
+        }
+    ]
 }

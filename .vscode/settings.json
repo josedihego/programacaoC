@@ -6,5 +6,33 @@
         "utility": "c",
         "stdlib.h": "c",
         "string.h": "c"
-    }
+    },
+    // === ESSENTIAL SETTINGS FOR C OUTPUT ===
+    // Run programs in terminal instead of OUTPUT panel
+    "code-runner.runInTerminal": true,
+    // Make terminal stay open after program finishes
+    "code-runner.preserveFocus": false,
+    // Clear terminal before each run
+    "code-runner.clearPreviousOutput": true,
+    // Save file before running
+    "code-runner.saveFileBeforeRun": true,
+    // === TERMINAL SETTINGS ===
+    // macOS uses zsh, Linux uses bash
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    // Show exit code in terminal
+    "terminal.integrated.showExitAlert": true,
+    // === C/C++ EXTENSION SETTINGS ===
+    // Disable some heavy features if lagging
+    "C_Cpp.intelliSenseEngine": "default",
+    "C_Cpp.autocomplete": "default",
+    // === EDITOR SETTINGS ===
+    // Auto save on focus loss
+    "files.autoSave": "onFocusChange",
+    // Format on save
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    // === TASK SETTINGS ===
+    // Show problem pane
+    "problems.showCurrentInStatus": true,
 }
