@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/josedihego/Dropbox/ifba/Salvador/disciplinas/INT-AUTO-LP-5821/source/2024_mecanica",
-      "program": "/Users/josedihego/Dropbox/ifba/Salvador/disciplinas/INT-AUTO-LP-5821/source/2024_mecanica/build/Debug/outDebug"
+      "cwd": "/Users/josedihego/Dropbox/ifba/Salvador/disciplinas/INT-AUTO-LP-5821/source/2025_2_INF027",
+      "program": "/Users/josedihego/Dropbox/ifba/Salvador/disciplinas/INT-AUTO-LP-5821/source/2025_2_INF027/build/Debug/outDebug"
     }
   ]
 }
