@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-#define T 2
+#define T 100
 int main(){
     float matriz[T][T];
     int R, G, B;
