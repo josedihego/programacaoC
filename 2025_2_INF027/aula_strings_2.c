@@ -11,7 +11,7 @@ bool ehVogal(char c)
 int main()
 {
     char nome[50];
-    printf("Qual seu nome?");
+    printf("Qual seu nome, por favor?");
     fgets(nome, 50, stdin);
     printf("Ola %s \n", nome);
     int num_vog = 0;
