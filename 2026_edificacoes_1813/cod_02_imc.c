@@ -10,5 +10,5 @@ int main(){
     printf("Informe seu peso(massa) em kg: ");
     scanf("%f",&m);
     imc = m/(a*a);
-    printf("Seu IMC é %.1f\n",imc);
+    printf("Seu IMC é %.2f\n",imc);
 }
