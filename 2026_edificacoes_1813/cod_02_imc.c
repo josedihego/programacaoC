@@ -11,4 +11,10 @@ int main(){
     scanf("%f",&m);
     imc = m/(a*a);
     printf("Seu IMC é %.2f\n",imc);
+    if(imc >= 18.5 && imc <=24.9){
+        printf("Seu IMC esta normal, parabéns!");
+    }
+    else{
+        printf("Seu IMC esta anormal! Verificar!");
+    }
 }
