@@ -35,4 +35,4 @@ int main()
     printf("d= %f\n", d);
     distancia_total = distancia_total + d;
     printf("Fim do percurso. Distância percorrida: %.2f", distancia_total);
-}
+} 

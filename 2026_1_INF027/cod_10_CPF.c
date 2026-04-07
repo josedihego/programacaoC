@@ -23,5 +23,25 @@ int main()
     else{
         digito_verificador_1 = 11 - resto1;
     }
+    // verificação segundo dígito verificador
+    int soma2 = d1 * 11 +
+                d2 * 10 +
+                d3 *  9 +
+                d4 *  8 +
+                d5 *  7 +
+                d6 *  6 +
+                d7 *  5 +
+                d8 *  4 +
+                d9 * 3 +
+                digito_verificador_1 * 2;
+    int resto2 = soma2 % 11;
+    int digito_verificador_2;
+    if(resto2 < 2){
+        digito_verificador_2 = 0;
+    }
+    else{
+        digito_verificador_2 = 11 - resto2;
+    }
     printf("Digito verificado 1: %d\n",digito_verificador_1);
+    printf("Dígito verificador 2: %d\n",digito_verificador_2);
 }
