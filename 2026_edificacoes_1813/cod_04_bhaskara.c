@@ -16,6 +16,6 @@ int main(){
     else{
         float x1 = (-b + sqrt(delta))/(2*a);
         float x2 = (-b - sqrt(delta))/(2*a);
-        printf("x1 é %.2f e x2 é %.2f\n",x1,x2);
+        printf("x1 é %.4f e x2 é %.4f\n",x1,x2);
     }
 }
