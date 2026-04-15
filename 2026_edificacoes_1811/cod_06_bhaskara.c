@@ -27,4 +27,8 @@ int main(){
         printf("Não existem raízes reais\n");
     }
 
+
+    //=POW(B2;2) - (4*A2*C2)
+    //=((-1*B2) + SQRT(D2))/(2*A2)
+    //=((-1*B2) - SQRT(D2))/(2*A2)
 }
