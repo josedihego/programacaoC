@@ -15,7 +15,7 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-#define QNT 3
+#define QNT 10
 
 int main()
 {
