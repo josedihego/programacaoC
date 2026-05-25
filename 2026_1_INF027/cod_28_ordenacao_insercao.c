@@ -11,7 +11,7 @@ void imprimir_vetor(int valores [], int tam){
 #define TAM 10
 
 int main(){
-    int valores [TAM] = {-1,8,7,5,6,-10,2,20,60,0};
+    int valores [TAM] = {-1,0,7,5,6,-10,2,20,60,0};
     printf("Antes:\n");
     imprimir_vetor(valores,TAM);
 
@@ -26,7 +26,7 @@ int main(){
     }
     printf("Depois:\n");
     imprimir_vetor(valores,TAM);
-    
+
     return EXIT_SUCCESS;
 
 }
