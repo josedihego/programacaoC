@@ -29,7 +29,7 @@ void imprimir_vetor(int valores [], int tam){
     }
     printf("%d >\n",valores[tam-1]);
 }
-#define TAM 10
+#define TAM 5
 
 int main(){
     int valores[TAM];
