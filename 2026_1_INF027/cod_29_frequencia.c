@@ -62,6 +62,11 @@ int main(){
             elemento = valores[p];
             frequencia = 1;
         }
+        if(frequencia > frequencia_vencedor){
+                vencedor = elemento;
+                frequencia_vencedor = frequencia;
+        }
+        
     }
     printf("Elemento com maior frequência é %d que aparece %d vezes", vencedor, frequencia_vencedor);
 }
