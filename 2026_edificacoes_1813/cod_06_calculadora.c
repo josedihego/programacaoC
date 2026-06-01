@@ -35,6 +35,5 @@ int main(){
                 break;
         }
          printf("Resultado:  %.2f %c %.2f = %.2f\n", v1, op, v2,res);
-
     }
 }
