@@ -13,7 +13,7 @@ int main()
     srand(time(NULL));
     int robo = rand() % 3;
     // printf("Jogada robô: %d\n", robo);
-    printf("Informe sua jogada: (0 .🧻) (1. ✂️) (2. 🪨): ");
+    printf("Informe sua jogada: 0 .🧻 # 1. ✂️ # 2. 🪨 : ");
     int jogador;
     scanf("%d", &jogador);
     printf("As jogadas foram: \n");
@@ -41,5 +41,18 @@ int main()
     }
     else{
         printf("🪨\n");
+    }
+    if(jogador==PAPEL && robo==PEDRA ||
+       jogador==TESOURA && robo==PAPEL ||
+       jogador==PEDRA && robo==TESOURA){
+         printf(" Você ganhou 🏆\n");
+    }
+    else{
+        if(jogador==robo){
+            printf("Empate 😐\n");
+        }
+        else{
+            printf("Robô ganhou 🤖\n");
+        }
     }
 }
