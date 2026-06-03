@@ -28,7 +28,8 @@ int main(){
     int jogador2 = rand() %3;
     printf("Jogador 2 fez ");
     imprimir_jogada(jogador2);
-    if(jogador1==PAPEL && jogador2==PEDRA ||              jogador1==TESOURA && jogador2==PAPEL || 
+    if(jogador1==PAPEL && jogador2==PEDRA ||              
+    jogador1==TESOURA && jogador2==PAPEL || 
     jogador1==PEDRA && jogador2==TESOURA){
         printf("🏆 Jogador 1 ganhou👑\n");
     }
