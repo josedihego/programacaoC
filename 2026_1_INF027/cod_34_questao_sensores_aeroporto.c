@@ -43,7 +43,7 @@ float media_descarte(float v1, float v2, float v3){
     return nova_media;
 }
 
-#define NUN_SEN 2
+#define NUN_SEN 10
 #define NUN_MED 3
 int main(){
    float leituras[NUN_SEN * NUN_MED];
