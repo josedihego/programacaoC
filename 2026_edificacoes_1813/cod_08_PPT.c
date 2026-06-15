@@ -23,9 +23,13 @@ int main(){
     srand(time(NULL));
     //vamos sortear a jogada do computador
     int computador = rand() % 3;
-    printf("Jogada gerada pelo computador é %d\n",computador);
+    //printf("Jogada gerada pelo computador é %d\n",computador);
     int jogador;
     printf("Informe sua jogada: 0: 🪨 1: 🧻 2: ✂️ >");
     scanf("%d", &jogador);
+    printf("\n O computador jogou ");
+    imprimir_jogada(computador);
+    printf("\n Você jogou ");
+    imprimir_jogada(jogador);
 
 }
