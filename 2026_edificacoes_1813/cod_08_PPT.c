@@ -31,5 +31,19 @@ int main(){
     imprimir_jogada(computador);
     printf("\n Você jogou ");
     imprimir_jogada(jogador);
+    printf("\n");
+    if(jogador==PEDRA && computador==TESOURA ||
+        jogador==PAPEL && computador==PEDRA ||
+        jogador==TESOURA && computador==PAPEL){
+            printf("Você ganhou 🎉\n");
+        }
+        else{
+            if(jogador==computador){
+                printf("Empate 🟰\n");
+            }
+            else{
+                printf("Não foi dessa vez 😥\n");
+            }
+        }
 
 }
