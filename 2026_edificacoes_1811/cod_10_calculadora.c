@@ -14,10 +14,10 @@ int main(){
     if(operacao!='r'){
         printf("Inform o segundo operando: ");
         scanf("%f", &op2);
-        printf("%f%c%f=", op1,operacao,op2);
+        printf("%.2f%c%.2f=", op1,operacao,op2);
     }
     else{
-        printf("raiz de %f =  ", op1);
+        printf("raiz de %.2f =  ", op1);
     }
     if(operacao=='+'){
         resultado = op1+op2;
@@ -45,7 +45,7 @@ int main(){
         valida = false;
     }
     if(valida){
-        printf("%f\n",resultado);
+        printf("%.2f\n",resultado);
     }
     else{
         printf("inválida\n");
