@@ -14,4 +14,10 @@ int main(){
         printf("%d, ", valores[p]);
     }
     printf("%d]\n",valores[TAM-1]);
+    // fazer outro for que imprime na ordem inversa
+    printf("Valores informados em ordem inversa: [");
+    for(int p=TAM-1; p>0; p = p -1){
+        printf("%d, ", valores[p]);
+    }
+    printf("%d]\n",valores[0]);
 }
