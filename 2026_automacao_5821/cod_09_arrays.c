@@ -10,12 +10,15 @@ int main(){
         printf("Informe o valor n° %d:", j+1);
         scanf("%d",&valores[j]);
     }
-    // imprimir o array
+    // imprimir o array na ordem em que os valores foram informados
 
     printf("Valores informados [");
-    for(int k=0; k < TAM; k = k+1){
+    for(int k=0; k < TAM-1; k = k+1){
         printf("%d, ",valores[k]);
     }
-    printf("]\n");
+    printf("%d]\n", valores[TAM-1]);
+
+    // exercício: imprimir em ordem inversa a ordem informada
+    
 
 }
