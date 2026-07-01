@@ -31,6 +31,10 @@ int main()
             }
             algarismos[i + 1] = chave;
         }
+        int numero_maior = (algarismos[3] * 1000 + algarismos[2] * 100+ algarismos[1] * 10 + algarismos[0]);
+        int numero_menor = (algarismos[0] * 1000 + algarismos[1] * 100 + algarismos[2] * 10 + algarismos[3]);
+        numero = numero_maior - numero_menor;
+        printf("%d - %d = %d\n", numero_maior, numero_menor,numero);
         // printf("Algarismos ordenados %d%d%d%d\n",algarismos[0],algarismos[1],algarismos[2],algarismos[3]);
     }
 }
