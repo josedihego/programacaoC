@@ -17,7 +17,7 @@ int main()
         alg[2] = numero / 10;
         alg[3] = numero % 10;
 
-        printf("pedaços %d-%d-%d-%d\n", alg[0], alg[1], alg[2], alg[3]);
+        //printf("pedaços %d-%d-%d-%d\n", alg[0], alg[1], alg[2], alg[3]);
 
         // agora vamos ordenar
         for (int a = 0; a < 4; a = a + 1)
@@ -32,7 +32,7 @@ int main()
                 }
             }
         }
-        printf("pedaços ordenados %d-%d-%d-%d\n", alg[0], alg[1], alg[2], alg[3]);
+        //printf("pedaços ordenados %d-%d-%d-%d\n", alg[0], alg[1], alg[2], alg[3]);
 
         int numero_maior = alg[3] * 1000 + alg[2] * 100 + alg[1] * 10 + alg[0] * 1;
         int numero_menor = alg[0] * 1000 + alg[1] * 100 + alg[2] * 10 + alg[3] * 1;
