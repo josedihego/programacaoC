@@ -14,7 +14,7 @@ int main(){
     }
     pos_final = pos_final - 1;
     textoA[pos_final] = '\0';
-    // apresendemos a copiar uma string em ordem inversa
+    // apresM]endemos a copiar uma string em ordem inversa
     printf("O barra zero esta na %d\n",pos_final);
     int j = 0;
     for(int i = pos_final-1; i>=0; i = i -1){
