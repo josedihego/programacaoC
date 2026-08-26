@@ -3,7 +3,6 @@
 #include <math.h>
 
 #define PI 3.1415
-
 float calc_perimetro(float raio){
     float perimetro = 2 * PI * raio;
     return perimetro;
@@ -21,7 +20,13 @@ float calc_volume(float raio){
     return volume;
 }
 
+// criar uma função que recebe os lados
+//de um triângulo retângulo e retorna
+//sua hipotenusa 
 
+float calc_hipotenusa(float ct1, float ct2){
+    
+}
 
 int main(){
     float r;
