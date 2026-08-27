@@ -1,0 +1,6 @@
+@startuml text
+User -> System: Submit login credentials
+System -> Database: Query user record
+Database --> System: Return validation
+System --> User: Grant access
+@enduml
