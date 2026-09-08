@@ -14,8 +14,10 @@ int main(){
     printf("Informe o tamnho P de corte:");
     scanf("%f",&P);
     //## CALCULAR AS SAÍDAS
-    int qnt = (int)(C/P);
+    qnt = (int)(C/P);
     printf("Quantidade de pedaços produzida é %d\n",qnt);
+    float sobra = (C - qnt * P) * L * A * D;
+    printf("Sobram %.2f gramas de madeira\n", sobra);
 
 
 
