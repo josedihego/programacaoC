@@ -35,6 +35,43 @@ int main()
 
     if(x_intersecta && y_intersecta){
         printf("Tem intersecção\n");
+        int xi, yi, hi, vi;
+        if(x1 > x2){
+            xi = x1;
+        }
+        else{
+            xi = x2;
+        }
+        if(y1 > y2){
+            yi = y2;
+        }
+        else{
+            yi = y1;
+        }
+        // descobrindo hi
+        if(x1+h1 > x2+h2){
+            hi = h2;
+        }
+        else{
+            if(x2< x1){
+                hi = h2 - (x1-x2);
+            }
+            else{
+                hi = h1 - (x2-x1);
+            }
+        }
+        if(y1+v1 > y2+v2){
+            vi = v2;
+        }
+        else{
+            if(y2 > y1){
+                vi = v2 - (y2-y1);
+            }
+            else{
+                vi = v1 - (y1-y2);
+            }
+        }
+        printf("intersecção %d %d %d %d\n ", xi,yi,hi,vi);
     }
     else{
         printf("Não tem intersecção\n");
