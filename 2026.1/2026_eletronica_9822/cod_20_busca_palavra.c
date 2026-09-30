@@ -17,10 +17,10 @@ int main(){
     while(texto[t]!='\n' && !achei){
 
         if(palavra[p]==texto[t]){
+            p = p +1;
             if(palavra[p]=='\n'){
                 achei = true;
-            }
-            p = p +1;
+            } 
         }
         else{
             p=0;
