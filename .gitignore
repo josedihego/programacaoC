@@ -1,1 +1,16 @@
-T
+# Executáveis compilados (arquivos sem extensão): ignora tudo,
+# depois libera pastas e arquivos que têm extensão (.c, .h, .md, ...)
+*
+!*/
+!*.*
+
+# Outros artefatos de compilação
+*.dSYM/
+*.o
+*.out
+*.exe
+build/
+.DS_Store
+
+# Pasta pessoal (não versionar)
+T/
