@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <math.h>
 
 int main(){
+    double x = sqrt(10);
+    printf("%f\n",x);
     int numero, numero_anterior;
     float soma = 0;
     int qnt_lidos=0, qnt_iguais;

@@ -2,21 +2,34 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug Active File (Cross-Platform)",
+      "name": "Debug C (arquivo ativo)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "preLaunchTask": "C/C++: Build Active File",
+      "linux": {
+        "MIMode": "gdb",
+        "miDebuggerPath": "/usr/bin/gdb",
+        "setupCommands": [
+          { "description": "Pretty printing", "text": "-enable-pretty-printing", "ignoreFailures": true }
+        ]
+      },
+      "osx": {
+        "MIMode": "lldb"
+      }
+    },
+    {
+      "name": "Debug C com CodeLLDB (arquivo ativo)",
       "type": "lldb",
       "request": "launch",
       "program": "${fileDirname}/${fileBasenameNoExtension}",
       "args": [],
       "cwd": "${fileDirname}",
       "preLaunchTask": "C/C++: Build Active File"
-    },
-    {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "lldb",
-      "request": "launch",
-      "args": [],
-      "cwd": "/Users/josedihego/Dropbox/ifba/Salvador/disciplinas/INT-AUTO-LP-5821/source/2025_2_INF027",
-      "program": "/Users/josedihego/Dropbox/ifba/Salvador/disciplinas/INT-AUTO-LP-5821/source/2025_2_INF027/build/Debug/outDebug"
     }
   ]
 }

@@ -2,7 +2,12 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#include <math.h>
+
 int main(){
+    double x = sqrt(10);
+    printf("%f\n",x);
+
     char * texto = malloc(500 * sizeof(char));
     char * palavra = malloc(10 * sizeof(char));
     printf("Informe texto: ");
