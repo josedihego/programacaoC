@@ -17,12 +17,16 @@ int main(){
         int N_copia = N;
         int r_gab = N_copia%B;
         bool brasileiro = true;
-        while(N_copia/B!=0){
+        while((N_copia/B)!=0){
             int r = N_copia%B;
             if(r!=r_gab){
                 brasileiro = false;
             }
+            
             N_copia = N_copia/B;
+        }
+        if(N_copia%B!=r_gab){
+            brasileiro= false;
         }
         if(brasileiro==true){
             printf("Número %d é brasileiro na base %d\n",N,B);
